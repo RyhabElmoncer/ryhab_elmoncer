@@ -133,12 +133,17 @@
                     <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
                         <figure>
                             <img src="img/projects/image.png" alt="Portfolio Image" class="card-img-top" />
-                            <div class="card-body">
-                                <h5 class="card-title">Plateforme E-Commerce multi-vendeurs</h5>
-                            </div>
+                            <!-- Afficher les détails par défaut -->
+                            <figcaption>
+                                <h5 class="card-title">Plateforme multi-vendeurs</h5>
+                                <p class="card-description">Angular , Flutter , Spring Boot, DevSecOps</p>
+                            </figcaption>
                         </figure>
+                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+
                     </div>
                 </li>
+                
                
                 <!-- Portfolio Item Ends -->
                 <!-- Portfolio Item Starts -->
@@ -151,21 +156,29 @@
                 <li class="col-md-4">
                     <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
                         <figure>
-                            <img src="img/projects/admin/Home.png" alt="Portfolio Image" class="card-img-top" />
-                            <div class="card-body">
-                                <h5 class="card-title">Venta Web</h5>
-                            </div>
+                            <img src="img/projects/admin/Franchhhh.png" alt="Portfolio Image" class="card-img-top" />
+                            <!-- Afficher les détails par défaut -->
+                            <figcaption>
+                                <h5 class="card-title">Espace administrateur</h5>
+                                <p class="card-description">Spring Boot, Angular,CI/CD </p>
+                            </figcaption>
                         </figure>
+                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+
                     </div>
                 </li>
                 <li class="col-md-4">
                     <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
                         <figure>
-                            <img src="img/projects/livreur/image.png" alt="Portfolio Image" class="card-img-top" />
-                            <div class="card-body">
-                                <h5 class="card-title">Venta Livreur</h5>
-                            </div>
+                            <img src="img/projects/livreur/cap.png" alt="Portfolio Image" class="card-img-top" />
+                            <!-- Afficher les détails par défaut -->
+                            <figcaption>
+                                <h5 class="card-title">Espace livreur</h5>
+                                <p class="card-description">Spring Boot , Flutter </p>
+                            </figcaption>
                         </figure>
+                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+
                     </div>
                 </li>
                 <!-- Portfolio Item Ends -->
@@ -293,7 +306,7 @@
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="img/projects/livreur/image.png" alt="slide 1">
+                                    <img src="img/projects/livreur/cap.png" alt="slide 1">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="img/projects/livreur/acceptanulCommande.jpg" alt="slide 2">
