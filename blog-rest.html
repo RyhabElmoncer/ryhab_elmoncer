@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
-<!-- Mirrored from slimhamdi.net/tunis/light/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:26 GMT -->
+<!-- Mirrored from slimhamdi.net/tunis/light/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:29 GMT -->
 <head>
     <meta charset="utf-8">
     <title>Softwar Developer</title>
@@ -40,7 +40,7 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 
-<body class="blog light">
+<body class="blog-post light">
 <!-- Live Style Switcher Starts - demo only -->
 <div id="switcher" class="">
     <div class="content-switcher">
@@ -140,6 +140,7 @@
                 <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                 <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
                 <li><a href="certifications.html"><i class="fa fa-graduation-cap"></i><span>Certifications</span></a></li>
+
             </ul>
         </div>
     </nav>
@@ -157,50 +158,66 @@
     <div class="container">
         <div class="row">
             <!-- Article Starts -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="blog-git.html" class="d-block position-relative overflow-hidden">
-                            <img src="img/blog/git.gif" class="img-fluid" alt="Git Workflow Blog Post">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="blog-git.html">Simplify Version Control with the Git Workflow</a></h3>
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>Discover the essential steps of the Git Workflow: add files, commit changes, and synchronize your projects 
-                                with a remote repository. This visual guide helps you master your workflows for effective collaboration.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="blog-rest.html" class="d-block position-relative overflow-hidden">
-                            <img src="img/blog/rest.jpeg" class="img-fluid" alt="Git Workflow Blog Post">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="blog-rest.html">SOAP vs REST: Key Differences Explained</a></h3>
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>
-                                Learn the differences between SOAP and REST, two essential web service architectures. 
-                                Discover why REST, with its lightweight JSON format, dominates modern development while SOAP excels in secure environments.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            
+            <article class="col-12">
+                <!-- Meta Starts -->
+                <div class="meta open-sans-font">
+                   
+                    <span><i class="fa fa-tags"></i> SOAP, Rest,API</span>
+                </div>
+                <!-- Meta Ends -->
+                <!-- Article Content Starts -->
+                <h1 class="text-uppercase text-capitalize">Understanding the Difference Between SOAP and REST</h1>
+                <img src="img/blog/rest.jpeg" class="img-fluid" alt="Git Workflow"/>
+<div class="blog-excerpt open-sans-font pb-5">
+    <p>
+        🌟 One of the most common questions in backend job interviews is: *"What’s the difference between SOAP and REST?"*  
+        This fundamental concept is crucial for any backend developer to understand.
+    </p>
+    <p>
+        🎈 **Before REST**, developers used SOAP (Simple Object Access Protocol) as the primary method for enabling communication 
+        between server-side (SSR) and client-side (CSR) applications. SOAP relies heavily on XML for data exchange, which made it 
+        slow and cumbersome due to the large data payloads.
+    </p>
+    <p>
+        ✨️ Then came **REST APIs (Representational State Transfer)**. REST embraced JSON, a lightweight data format, making data 
+        transfer faster and more efficient. JSON’s simplicity as plain text greatly reduced payload size, improving performance.
+    </p>
+
+    <h2 class="text-uppercase text-capitalize">Key Differences Between SOAP and REST</h2>
+
+    <p>Both SOAP and REST are web services designed to standardize communication between different servers, but they differ significantly in their approach:</p>
+
+    <ul>
+        <li><strong>REST:</strong> REST is an *architectural style* that provides a flexible way of interaction. By adhering to a set of constraints, a system can be called RESTful. It focuses on performance, data control, and uses lightweight JSON for communication.</li>
+        <li><strong>SOAP:</strong> SOAP is a *protocol* that enforces strict rules for communication. It relies solely on XML for data exchange, resulting in slower performance due to larger message sizes.</li>
+    </ul>
+
+    <h3>Advantages of REST</h3>
+    <ul>
+        <li>✅ More flexible and easier to use</li>
+        <li>✅ Simple to learn with a gentle learning curve</li>
+        <li>✅ Doesn’t require expensive tools or advanced programming languages</li>
+        <li>✅ Faster performance since it avoids using XML for message exchange</li>
+    </ul>
+
+    <h3>Advantages of SOAP</h3>
+    <ul>
+        <li>✅ Provides built-in security protocols like WS-Security</li>
+        <li>✅ Offers robust error handling options</li>
+    </ul>
+
+    <p>
+        REST has become the de facto standard for modern web services due to its simplicity, speed, and flexibility, making it 
+        the go-to choice for developers building scalable and efficient systems. SOAP, while less common today, is still used in 
+        scenarios that demand high levels of security and strict data handling protocols.
+    </p>
+</div>
+
+
+            <!-- Article Ends -->
+        </div>
     </div>
-
 </section>
-
 <!-- Template JS Files -->
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
@@ -218,5 +235,5 @@
 </body>
 
 
-<!-- Mirrored from slimhamdi.net/tunis/light/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:28 GMT -->
+<!-- Mirrored from slimhamdi.net/tunis/light/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:29 GMT -->
 </html>
