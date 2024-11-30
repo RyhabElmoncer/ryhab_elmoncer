@@ -840,6 +840,15 @@ body.light hr.separator {
   color: #fff;
   background-color: #252525;
 }
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background: #4caf50;
+  z-index: 100;
+}
 
 .about .resume-box .time {
   color: #fff;
@@ -856,6 +865,20 @@ body.light hr.separator {
 .about .resume-box h5 {
   font-size: 18px;
   margin: 7px 0 10px;
+}
+.service-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.service-icon {
+  font-size: 40px;
+  color: #28a745;
 }
 
 .about .resume-box p {
