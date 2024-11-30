@@ -463,7 +463,58 @@ body.light hr.separator {
 @media (min-width: 992px) {
 
   /*** Navigation ***/
-
+  .contact-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-section h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info i {
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .social-links a {
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #007bff;
+  }
+  
+  .contact-form .form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
   .header {
     position: fixed;
     right: 30px;
