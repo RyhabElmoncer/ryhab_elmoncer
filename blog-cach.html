@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
-<!-- Mirrored from slimhamdi.net/tunis/light/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:26 GMT -->
+<!-- Mirrored from slimhamdi.net/tunis/light/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:29 GMT -->
 <head>
     <meta charset="utf-8">
     <title>Softwar Developer</title>
@@ -40,7 +40,7 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 
-<body class="blog light">
+<body class="blog-post light">
 <!-- Live Style Switcher Starts - demo only -->
 <div id="switcher" class="">
     <div class="content-switcher">
@@ -148,6 +148,7 @@
                 <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                 <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
                 <li><a href="certifications.html"><i class="fa fa-graduation-cap"></i><span>Certifications</span></a></li>
+
             </ul>
         </div>
     </nav>
@@ -165,66 +166,51 @@
     <div class="container">
         <div class="row">
             <!-- Article Starts -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="blog-git.html" class="d-block position-relative overflow-hidden">
-                            <img src="img/blog/git.gif" class="img-fluid" alt="Git Workflow Blog Post">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="blog-git.html">Simplify Version Control with the Git Workflow</a></h3>
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>Discover the essential steps of the Git Workflow: add files, commit changes, and synchronize your projects 
-                                with a remote repository. This visual guide helps you master your workflows for effective collaboration.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="blog-rest.html" class="d-block position-relative overflow-hidden">
-                            <img src="img/blog/rest.jpeg" class="img-fluid" alt="Git Workflow Blog Post">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="blog-rest.html">SOAP vs REST: Key Differences Explained</a></h3>
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>
-                                Learn the differences between SOAP and REST, two essential web service architectures. 
-                                Discover why REST, with its lightweight JSON format, dominates modern development while SOAP excels in secure environments.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="blog-cach.html" class="d-block position-relative overflow-hidden">
-                            <img src="img/blog/cash.jpeg" class="img-fluid" alt="Git Workflow Blog Post">
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="blog-cach.html">Boostez les performances de vos applications grâce au Caching </a></h3>
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>Le caching optimise la rapidité des applications en stockant temporairement les données fréquemment demandées. Cela réduit les temps de réponse et allège le backend. 💡</p>
+            <article class="col-12">
+                
+                        
+                            <div class="post-content">
+                                <h1>🚀 Boostez les performances de vos applications grâce au Caching !</h1>
+                                <img src="img/blog/cash.jpeg" class="img-fluid" alt="Git Workflow"/>
+
+                                <p>Le <strong>caching</strong> est une technique incontournable pour optimiser la rapidité de vos applications. En stockant temporairement les données les plus demandées, il réduit les temps de réponse, allège la charge du backend et transforme l’expérience utilisateur. 💡</p>
+                                <h2>1️⃣ Les types de caching dans Spring Boot</h2>
+                                <ul>
+                                    <li><strong>@Cacheable</strong> : Stocke les résultats d'une méthode en fonction des paramètres.</li>
+                                    <li><strong>@CachePut</strong> : Met à jour le cache avec de nouvelles données.</li>
+                                    <li><strong>@CacheEvict</strong> : Supprime les anciennes données du cache.</li>
+                                    <li><strong>@Caching</strong> : Combine plusieurs annotations pour plus de flexibilité.</li>
+                                </ul>
+                                <h2>2️⃣ Comment activer le caching ?</h2>
+                                <p>Il suffit d’ajouter une annotation spécifique et de configurer facilement votre application pour activer le cache en un clin d’œil.</p>
+                                <h2>3️⃣ Le cache en mémoire (In-Memory)</h2>
+                                <p>Par défaut, Spring Boot utilise un stockage en mémoire avec <strong>ConcurrentHashMap</strong>, idéal pour les petites applications ou les environnements de test.</p>
+                                <h2>4️⃣ Des solutions robustes pour les applications de grande envergure</h2>
+                                <p>Pour les projets à fort trafic, optez pour des solutions comme <strong>Redis</strong>, <strong>EhCache</strong> ou <strong>Hazelcast</strong>.</p>
+                                <h2>5️⃣ Caching conditionnel : un contrôle total</h2>
+                                <p>Activez le cache selon des conditions spécifiques, comme ne le stocker que lorsque certains critères sont remplis.</p>
+                                <h2>6️⃣ Mise à jour et nettoyage du cache</h2>
+                                <ul>
+                                    <li><strong>Mise à jour</strong> : Le cache se met à jour lorsque les données changent.</li>
+                                    <li><strong>Suppression</strong> : Vous pouvez vider des entrées spécifiques ou tout le cache si nécessaire.</li>
+                                </ul>
+                                <h2>7️⃣ Nos conseils pour un caching optimal</h2>
+                                <ul>
+                                    <li><strong>Durée de vie (TTL)</strong> : Fixez une durée de validité pour éviter les données obsolètes.</li>
+                                    <li><strong>Suivi des performances</strong> : Analysez les <strong>cache hits</strong> et <strong>misses</strong>.</li>
+                                    <li><strong>Stockage sélectif</strong> : Ne mettez en cache que les données les plus lourdes à traiter.</li>
+                                </ul>
+                                <p><strong>En résumé :</strong> Le caching est la clé pour alléger votre système et offrir une expérience utilisateur fluide. 🚀</p>
+                            </div>
                         </div>
                     </div>
-                </article>
-            </div>
+                </div>
+                
+
+            <!-- Article Ends -->
+        </div>
     </div>
-
 </section>
-
 <!-- Template JS Files -->
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
@@ -242,5 +228,5 @@
 </body>
 
 
-<!-- Mirrored from slimhamdi.net/tunis/light/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:28 GMT -->
+<!-- Mirrored from slimhamdi.net/tunis/light/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:29 GMT -->
 </html>
