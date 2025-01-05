@@ -1,3 +1,51 @@
+/* Uniformiser les images */
+.uniform-img {
+  width: 100%;
+  height: 200px; /* Ajustez selon vos besoins */
+  object-fit: cover; /* Pour couper ou zoomer les images selon leurs proportions */
+  border-radius: 5px; /* Coins arrondis pour un style moderne */
+}
+
+/* Style des cartes */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Effet de survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des titres et descriptions */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #006400; /* Vert foncé */
+}
+
+.card-description {
+  font-size: 1rem;
+  text-align: center;
+  color: #333; /* Gris foncé */
+}
+
+/* Boutons */
+.btn-primary {
+  background-color: #28a745; /* Vert bootstrap */
+  border: none;
+  color: #fff;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #218838; /* Vert légèrement plus foncé */
+}
+
 /*
 Template Name: Tunis - Personal Portfolio
 Author: celtano
