@@ -1,0 +1,15 @@
+;/*FB_PKG_DELIM*/
+
+__d("MWFDSBlockCircle.svg.react",["cr:21565"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21565")}),98);
+__d("MWFDSBroadcastChat.svg.react",["cr:21574"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21574")}),98);
+__d("MWFDSChevronUp.svg.react",["cr:21606"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21606")}),98);
+__d("MWFDSCompose.svg.react",["cr:21616"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21616")}),98);
+__d("MWFDSDocumentComplete.svg.react",["cr:21627"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21627")}),98);
+__d("MWFDSEye.svg.react",["cr:21642"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21642")}),98);
+__d("MWFDSFaceSparkles.svg.react",["cr:21647"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21647")}),98);
+__d("MWFDSInbox.svg.react",["cr:21685"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21685")}),98);
+__d("MWFDSLeave.svg.react",["cr:21697"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21697")}),98);
+__d("MWFDSPhotoLibrary.svg.react",["cr:21736"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21736")}),98);
+__d("MWFDSProfile.svg.react",["cr:21519"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21519")}),98);
+__d("MWFDSReport.svg.react",["cr:21759"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21759")}),98);
+__d("MWFDSShield.svg.react",["cr:21780"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21780")}),98);

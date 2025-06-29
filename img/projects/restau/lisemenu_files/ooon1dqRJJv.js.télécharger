@@ -1,0 +1,25 @@
+;/*FB_PKG_DELIM*/
+
+__d("MWFDSAccountSwitch.svg.react",["cr:21518"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21518")}),98);
+__d("MWFDSAppFacebook.svg.react",["cr:21526"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21526")}),98);
+__d("MWFDSCalendar.svg.react",["cr:21581"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21581")}),98);
+__d("MWFDSFriendGenericCheckmark.svg.react",["cr:21666"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21666")}),98);
+__d("MWFDSMenuItemAppGroups.svg.react",["cr:21829"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21829")}),98);
+__d("MWFDSMenuItemBell.svg.react",["cr:21861"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21861")}),98);
+__d("MWFDSMenuItemBellCross.svg.react",["cr:21860"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21860")}),98);
+__d("MWFDSMenuItemChatHost.svg.react",["cr:21888"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21888")}),98);
+__d("MWFDSMenuItemEnvelopeBadged.svg.react",["cr:21920"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21920")}),98);
+__d("MWFDSMenuItemEye.svg.react",["cr:21925"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21925")}),98);
+__d("MWFDSMenuItemFriendGenericCheckmark.svg.react",["cr:21939"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21939")}),98);
+__d("MWFDSMenuItemLink.svg.react",["cr:21967"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21967")}),98);
+__d("MWFDSMenuItemMessageCross.svg.react",["cr:21977"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21977")}),98);
+__d("MWFDSMenuItemMinusCircle.svg.react",["cr:21862"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21862")}),98);
+__d("MWFDSMenuItemPauseChat.svg.react",["cr:21992"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21992")}),98);
+__d("MWFDSMenuItemPlusCircle.svg.react",["cr:22006"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:22006")}),98);
+__d("MWFDSMenuItemProfile.svg.react",["cr:21823"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21823")}),98);
+__d("MWFDSMenuItemReport.svg.react",["cr:22021"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:22021")}),98);
+__d("MWFDSMenuItemResumeChat.svg.react",["cr:22025"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:22025")}),98);
+__d("MWFDSMenuItemShare.svg.react",["cr:22037"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:22037")}),98);
+__d("MWFDSMenuItemThread.svg.react",["cr:21978"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21978")}),98);
+__d("MWFDSMenuItemTrash.svg.react",["cr:22060"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:22060")}),98);
+__d("MWFDSMessageCross.svg.react",["cr:21709"],(function(a,b,c,d,e,f,g){"use strict";g["default"]=b("cr:21709")}),98);
