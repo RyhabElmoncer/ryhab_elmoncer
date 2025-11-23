@@ -1,51 +1,671 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from slimhamdi.net/tunis/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:26 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Softwar Developer</title>
+    <title>Software Developer - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Template Google Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
 
-    <!-- Template CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/preloader.min.css" rel="stylesheet">
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS Skin File -->
-    <link href="css/skins/magenta.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
 
-    <!-- Modernizr JS File -->
-    <script src="js/modernizr.custom.js"></script>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: #666;
+            font-weight: 500;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        .poppins-font {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .open-sans-font {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        hr.separator {
+            border-top: 1px solid #ddd;
+            margin: 70px auto 55px;
+            max-width: 40%;
+        }
+
+        .ft-wt-600 {
+            font-weight: 600;
+        }
+
+        .custom-title {
+            padding-bottom: 22px;
+            font-size: 26px;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            right: 30px;
+            bottom: 0;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            height: calc(100vh - 200px);
+            top: 100px;
+        }
+
+        .header ul.icon-menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .header ul.icon-menu li.icon-box {
+            width: 50px;
+            height: 50px;
+            list-style: none;
+            position: relative;
+            display: flex;
+            align-items: center;
+            transition: .3s;
+            margin: 20px 0;
+            border-radius: 50%;
+            background: #eee;
+        }
+
+        .header ul.icon-menu li.icon-box i {
+            color: #666;
+            font-size: 19px;
+            transition: .3s;
+        }
+
+        .header ul.icon-menu li.icon-box.active,
+        .header ul.icon-menu li.icon-box:hover {
+            background: #ff0077;
+        }
+
+        .header ul.icon-menu li.icon-box.active i,
+        .header ul.icon-menu li.icon-box:hover i {
+            color: #fff;
+        }
+
+        .header .icon-box a {
+            display: block;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+        }
+
+        .header .icon-menu i {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            top: 15px;
+        }
+
+        .header .icon-box h2 {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0;
+            color: #fff;
+            line-height: 50px;
+            font-weight: 500;
+            transition: all .3s;
+            border-radius: 30px;
+            text-transform: uppercase;
+            padding: 0 25px 0 30px;
+            height: 50px;
+            font-size: 15px;
+            background: #ff0077;
+        }
+
+        .header .icon-box a:hover h2 {
+            opacity: 1;
+            right: 27px;
+            border-radius: 30px 0 0 30px;
+        }
+
+        /* Title Section */
+        .title-section {
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            padding: 80px 0;
+        }
+
+        .title-section h1 {
+            font-size: 56px;
+            font-weight: 900;
+            color: #666;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .title-section h1 span {
+            color: #ff0077;
+        }
+
+        .title-bg {
+            font-size: 110px;
+            left: 0;
+            letter-spacing: 10px;
+            line-height: 0.7;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            text-transform: uppercase;
+            font-weight: 800;
+            transform: translateY(-50%);
+            color: rgba(30, 37, 48, 0.07);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 50px 0 80px;
+        }
+
+        /* Contact Info Cards */
+        .contact-info-card {
+            background: #fff;
+            border: 2px solid #f0f0f0;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 0, 119, 0.05), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .contact-info-card:hover::before {
+            left: 100%;
+        }
+
+        .contact-info-card:hover {
+            border-color: #ff0077;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 0, 119, 0.15);
+        }
+
+        .contact-info-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .contact-info-card p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 0, 119, 0.05);
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #ff0077;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .contact-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .contact-icon i {
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .contact-details {
+            flex: 1;
+        }
+
+        .contact-details span {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #ff0077;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .contact-details a,
+        .contact-details p {
+            font-size: 16px;
+            color: #666;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 0;
+        }
+
+        .contact-details a:hover {
+            color: #ff0077;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-links a i {
+            font-size: 20px;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #ff0077;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 0, 119, 0.3);
+        }
+
+        .social-links a:hover i {
+            color: #fff;
+        }
+
+        /* Download CV Button */
+        .download-cv-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(255, 0, 119, 0.05) 0%, rgba(255, 0, 119, 0.1) 100%);
+            border-radius: 15px;
+        }
+
+        .download-cv-section h4 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            overflow: hidden;
+            display: inline-block;
+            line-height: 1.4;
+            border-radius: 35px;
+            white-space: nowrap;
+            text-align: center;
+            cursor: pointer;
+            transition: 250ms all ease-in-out;
+            text-transform: uppercase;
+            text-decoration: none !important;
+            position: relative;
+            z-index: 1;
+            padding: 16px 70px 16px 35px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #ff0077;
+            border: 2px solid #ff0077;
+        }
+
+        .button:hover {
+            background-color: transparent;
+        }
+
+        .button .button-text {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            transition: .3s ease-out all;
+        }
+
+        .button:hover .button-text {
+            color: #ff0077;
+        }
+
+        .button-icon {
+            position: absolute;
+            right: -1px;
+            top: -1px;
+            bottom: 0;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 19px;
+            color: #ffffff;
+            border-radius: 50%;
+            background-color: #ff0077;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: #fff;
+            border: 2px solid #f0f0f0;
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 30px;
+        }
+
+        .contact-form h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .form-control {
+            border: 2px solid #f0f0f0;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-size: 15px;
+            color: #666;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #ff0077;
+            box-shadow: 0 0 0 0.2rem rgba(255, 0, 119, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            background: #ff0077;
+            color: #fff;
+            border: 2px solid #ff0077;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background: transparent;
+            color: #ff0077;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 991px) {
+            .header {
+                display: none;
+            }
+
+            #menuToggle {
+                display: inline-block;
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                z-index: 1111;
+                user-select: none;
+                padding: 19px 0 0 16px;
+                width: 54px;
+                height: 54px;
+                border-radius: 5px;
+                background: #eee;
+            }
+
+            #menuToggle input {
+                display: flex;
+                width: 54px;
+                height: 54px;
+                position: absolute;
+                cursor: pointer;
+                opacity: 0;
+                z-index: 2;
+                top: 0;
+                left: 0;
+            }
+
+            #menuToggle > span {
+                display: flex;
+                width: 23px;
+                height: 2px;
+                margin-bottom: 5px;
+                position: relative;
+                background: #666;
+                border-radius: 3px;
+                z-index: 1;
+                transform-origin: 5px 0;
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+            }
+
+            #menuToggle input:checked ~ span {
+                opacity: 1;
+                transform: rotate(45deg) translate(4px, 0);
+                background: #666;
+            }
+
+            #menuToggle input:checked ~ span:nth-last-child(3) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
+
+            #menuToggle input:checked ~ span:nth-last-child(2) {
+                transform: rotate(-45deg) translate(2px, 4px);
+            }
+
+            #menu {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding-top: 60px;
+                background-color: #eee;
+                transform: translate(-100%, 0);
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+            }
+
+            #menuToggle input:checked ~ ul {
+                transform: none;
+            }
+
+            #menu li {
+                position: relative;
+                padding-left: 30px;
+                list-style: none;
+            }
+
+            #menu li:after {
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: calc(100% - 60px);
+                background: #ddd;
+                left: 30px;
+            }
+
+            #menu li.active a span {
+                font-weight: 600;
+                color: #ff0077;
+            }
+
+            #menu li a {
+                color: #666;
+                text-transform: uppercase;
+                font-size: 22px;
+                display: block;
+                text-decoration: none;
+                padding: 14px 0;
+                position: relative;
+            }
+
+            #menu li a span {
+                position: absolute;
+                left: 50px;
+                font-weight: 400;
+            }
+
+            #menu li a i {
+                width: 30px;
+            }
+
+            .contact-form {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .title-section h1 {
+                font-size: 36px;
+            }
+
+            .title-bg {
+                font-size: 60px;
+            }
+
+            #menuToggle {
+                right: 10px;
+                top: 10px;
+            }
+
+            .custom-title {
+                font-size: 22px;
+            }
+
+            .contact-info-card {
+                padding: 20px;
+            }
+
+            .contact-info-card h3 {
+                font-size: 20px;
+            }
+
+            .contact-item {
+                padding: 15px;
+            }
+
+            .contact-icon {
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+            }
+
+            .contact-icon i {
+                font-size: 18px;
+            }
+
+            .contact-details a,
+            .contact-details p {
+                font-size: 14px;
+            }
+
+            .download-cv-section {
+                padding: 30px 20px;
+            }
+
+            .download-cv-section h4 {
+                font-size: 18px;
+            }
+
+            .button {
+                padding: 14px 60px 14px 25px;
+                font-size: 14px;
+            }
+
+            .button-icon {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
 </head>
 
 <body class="contact light">
 
 <!-- Header Starts -->
 <header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+    <!-- Desktop Navigation -->
+    <ul class="icon-menu d-none d-lg-block">
         <li class="icon-box">
             <i class="fa fa-home"></i>
             <a href="index.html">
@@ -89,91 +709,162 @@
             </a>
         </li>
     </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li ><a href="skills.html"><i class="fa fa-cogs"></i><span>Skills</span></a></li>
-
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
-                <li><a href="certifications.html"><i class="fa fa-graduation-cap"></i><span>Certifications</span></a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Mobile Menu Ends -->
 </header>
-<!-- Header Ends -->
-<!-- Page Title Starts -->
-<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>get in <span>touch</span></h1>
-    <span class="title-bg">contact</span>
+
+<!-- Mobile Menu -->
+<nav role="navigation" class="d-block d-lg-none">
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="list-unstyled" id="menu">
+            <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+            <li><a href="skills.html"><i class="fa fa-cogs"></i><span>Skills</span></a></li>
+            <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+            <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+            <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            <li><a href="certifications.html"><i class="fa fa-graduation-cap"></i><span>Certifications</span></a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Page Title -->
+<section class="title-section text-left text-sm-center">
+    <h1>GET IN <span>TOUCH</span></h1>
+    <span class="title-bg">Contact</span>
 </section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
-<section class="main-content revealator-slideup revealator-once revealator-delay1">
+
+<!-- Main Content -->
+<section class="main-content">
     <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 d-block d-sm-none">
-                <img src="img/img-mobile-light.jpg" class="img-fluid main-img-mobile" alt="my picture" />
-            </div>
-            <!-- Left Side Starts -->
-            <div class="col-12 col-lg-4">
-                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Don't be shy !</h3>
-                <p class="open-sans-font mb-3">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-                <p class="open-sans-font custom-span-contact position-relative">
-                    <i class="fa fa-envelope-open position-absolute"></i>
-                    <span class="d-block">mail me</span>ryhabelmoncerr@gmail.com
-                </p>
+        <div class="row">
+            <!-- Contact Info Card -->
+            <div class="col-12 col-lg-6">
+                <div class="contact-info-card">
+                    <h3 class="poppins-font">Don't Be Shy!</h3>
+                    <p class="open-sans-font">
+                        Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                    </p>
 
-                <p class="open-sans-font custom-span-contact position-relative">
-                    <i class="fa fa-phone-square position-absolute"></i>
-                    <span class="d-block">call me</span>+216 29 418 145
-                </p>
-                <ul class="social list-unstyled pt-1 mb-5">
-                    
-                    <li class="github"><a title="github" href="https://github.com/RyhabElmoncer"><i class="fa fa-github"></i></a>
-                    </li>
-                    <li class="linkedin"><a title="linkedin" href="https://www.linkedin.com/in/elmoncer-ryhab/"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                   
-                </ul>
-               
-            </div>
-            
-            <!-- Left Side Ends -->
-            <div class="row justify-content-center align-items-center">
-                <a class="button" href="https://drive.google.com/file/d/17qkex0gece99eQvSGiXX7EtYTDRXCSlg/view?usp=sharing">
-                    <span class="button-text">Download CV</span>
-                    <span class="button-icon fa fa-download"></span>
-                </a>
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span>Mail Me</span>
+                            <a href="mailto:ryhabelmoncerr@gmail.com">ryhabelmoncerr@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span>Call Me</span>
+                            <a href="tel:+21629418145">+216 29 418 145</a>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span>Location</span>
+                            <p>Tunis, Tunisia</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/RyhabElmoncer" target="_blank" title="GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elmoncer-ryhab/" target="_blank" title="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
 
+            <!-- Contact Form -->
+            <div class="col-12 col-lg-6">
+               <div class="row">
+            <div class="col-12">
+                <div class="download-cv-section">
+                    <h4 class="poppins-font">Want to know more about me?</h4>
+                    <p class="open-sans-font mb-4">Download my CV to see my full experience and qualifications.</p>
+                    <a class="button" href="https://drive.google.com/file/d/1AIY8NOnpJASsyNxKMj126rdDUn1KvDrg/view?usp=drive_link" target="_blank">
+                        <span class="button-text">Download CV</span>
+                        <span class="button-icon fa fa-download"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+
+        <!-- Download CV Section -->
+       
+    </div>
 </section>
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+
+<!-- JavaScript -->
+<script>
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Create mailto link
+        const mailtoLink = `mailto:ryhabelmoncerr@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+        
+        // Open email client
+        window.location.href = mailtoLink;
+        
+        // Show success message (optional)
+        alert('Opening your email client...');
+    });
+
+    // Animate contact items on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactItems = document.querySelectorAll('.contact-item');
+        
+        const animateItems = () => {
+            contactItems.forEach((item, index) => {
+                const rect = item.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+                
+                if (isVisible && !item.classList.contains('animated')) {
+                    setTimeout(() => {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateX(-20px)';
+                        setTimeout(() => {
+                            item.style.transition = 'all 0.5s ease';
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateX(0)';
+                            item.classList.add('animated');
+                        }, 50);
+                    }, index * 100);
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateItems);
+        animateItems();
+    });
+</script>
 
 </body>
-
-
-<!-- Mirrored from slimhamdi.net/tunis/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:26 GMT -->
 </html>

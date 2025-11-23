@@ -1,60 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from slimhamdi.net/tunis/light/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:09 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Softwar Developer</title>
+    <title>Software Developer - Skills</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Template Google Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
 
-    <!-- Template CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/preloader.min.css" rel="stylesheet">
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS Skin File -->
-    <link href="css/skins/magenta.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
 
-    <!-- Modernizr JS File -->
-    <script src="js/modernizr.custom.js"></script>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: #666;
+            font-weight: 500;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        .poppins-font {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .open-sans-font {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        hr.separator {
+            border-top: 1px solid #ddd;
+            margin: 70px auto 55px;
+            max-width: 40%;
+        }
+
+        .ft-wt-600 {
+            font-weight: 600;
+        }
+
+        .custom-title {
+            padding-bottom: 22px;
+            font-size: 26px;
+            position: relative;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            right: 30px;
+            bottom: 0;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            height: calc(100vh - 200px);
+            top: 100px;
+        }
+
+        .header ul.icon-menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .header ul.icon-menu li.icon-box {
+            width: 50px;
+            height: 50px;
+            list-style: none;
+            position: relative;
+            display: flex;
+            align-items: center;
+            transition: .3s;
+            margin: 20px 0;
+            border-radius: 50%;
+            background: #eee;
+        }
+
+        .header ul.icon-menu li.icon-box i {
+            color: #666;
+            font-size: 19px;
+            transition: .3s;
+        }
+
+        .header ul.icon-menu li.icon-box.active,
+        .header ul.icon-menu li.icon-box:hover {
+            background: #ff0077;
+        }
+
+        .header ul.icon-menu li.icon-box.active i,
+        .header ul.icon-menu li.icon-box:hover i {
+            color: #fff;
+        }
+
+        .header .icon-box a {
+            display: block;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+        }
+
+        .header .icon-menu i {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            top: 15px;
+        }
+
+        .header .icon-box h2 {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0;
+            color: #fff;
+            line-height: 50px;
+            font-weight: 500;
+            transition: all .3s;
+            border-radius: 30px;
+            text-transform: uppercase;
+            padding: 0 25px 0 30px;
+            height: 50px;
+            font-size: 15px;
+            background: #ff0077;
+        }
+
+        .header .icon-box a:hover h2 {
+            opacity: 1;
+            right: 27px;
+            border-radius: 30px 0 0 30px;
+        }
+
+        /* Title Section */
+        .title-section {
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            padding: 80px 0;
+        }
+
+        .title-section h1 {
+            font-size: 56px;
+            font-weight: 900;
+            color: #666;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .title-section h1 span {
+            color: #ff0077;
+        }
+
+        .title-bg {
+            font-size: 110px;
+            left: 0;
+            letter-spacing: 10px;
+            line-height: 0.7;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            text-transform: uppercase;
+            font-weight: 800;
+            transform: translateY(-50%);
+            color: rgba(30, 37, 48, 0.07);
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 50px 0;
+        }
+
+        .service-box {
+            border: 2px solid #f0f0f0;
+            padding: 30px 20px;
+            border-radius: 15px;
+            transition: all 0.4s ease;
+            height: 100%;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 0, 119, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-box:hover::before {
+            left: 100%;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(255, 0, 119, 0.2);
+            border-color: #ff0077;
+        }
+
+        .service-icon {
+            font-size: 40px;
+            color: #ff0077;
+            transition: all 0.3s ease;
+        }
+
+        .service-box:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-box h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #666;
+            margin-top: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .service-box:hover h4 {
+            color: #ff0077;
+        }
+
+        .service-box p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #666;
+            margin: 0;
+        }
+
+        .service-box svg {
+            transition: all 0.3s ease;
+        }
+
+        .service-box:hover svg {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Skills Section */
+        .skills-section {
+            padding: 50px 0;
+        }
+
+        .skill-category {
+            margin-bottom: 50px;
+        }
+
+        .skill-category h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 4px solid #ff0077;
+            text-transform: uppercase;
+        }
+
+        .skill-item {
+            background: #fff;
+            border: 2px solid #f0f0f0;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 0, 119, 0.1), transparent);
+            transition: width 0.3s ease;
+        }
+
+        .skill-item:hover {
+            border-color: #ff0077;
+            transform: translateX(5px);
+        }
+
+        .skill-item:hover::before {
+            width: 100%;
+        }
+
+        .skill-item .skill-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .skill-item .skill-progress {
+            width: 100%;
+            height: 8px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        .skill-item .skill-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #ff0077, #ff3399);
+            border-radius: 10px;
+            transition: width 1s ease;
+            position: relative;
+        }
+
+        .skill-item .skill-progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #f8f8f8;
+            border: 1px solid #e0e0e0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #666;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .skill-tag:hover {
+            background: #ff0077;
+            color: #fff;
+            border-color: #ff0077;
+            transform: scale(1.05);
+        }
+
+        /* Soft Skills Section */
+        .soft-skills-section {
+            padding: 50px 0;
+            background: #f8f8f8;
+            border-radius: 15px;
+            margin: 50px 0;
+        }
+
+        .soft-skill-card {
+            background: #fff;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .soft-skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 0, 119, 0.15);
+            border-color: #ff0077;
+        }
+
+        .soft-skill-icon {
+            font-size: 50px;
+            color: #ff0077;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .soft-skill-card:hover .soft-skill-icon {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .soft-skill-card h5 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #666;
+            margin: 0;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 991px) {
+            .header {
+                display: none;
+            }
+
+            #menuToggle {
+                display: inline-block;
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                z-index: 1111;
+                user-select: none;
+                padding: 19px 0 0 16px;
+                width: 54px;
+                height: 54px;
+                border-radius: 5px;
+                background: #eee;
+            }
+
+            #menuToggle input {
+                display: flex;
+                width: 54px;
+                height: 54px;
+                position: absolute;
+                cursor: pointer;
+                opacity: 0;
+                z-index: 2;
+                top: 0;
+                left: 0;
+            }
+
+            #menuToggle > span {
+                display: flex;
+                width: 23px;
+                height: 2px;
+                margin-bottom: 5px;
+                position: relative;
+                background: #666;
+                border-radius: 3px;
+                z-index: 1;
+                transform-origin: 5px 0;
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+            }
+
+            #menuToggle input:checked ~ span {
+                opacity: 1;
+                transform: rotate(45deg) translate(4px, 0);
+                background: #666;
+            }
+
+            #menuToggle input:checked ~ span:nth-last-child(3) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
+
+            #menuToggle input:checked ~ span:nth-last-child(2) {
+                transform: rotate(-45deg) translate(2px, 4px);
+            }
+
+            #menu {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding-top: 60px;
+                background-color: #eee;
+                transform: translate(-100%, 0);
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+            }
+
+            #menuToggle input:checked ~ ul {
+                transform: none;
+            }
+
+            #menu li {
+                position: relative;
+                padding-left: 30px;
+                list-style: none;
+            }
+
+            #menu li:after {
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: calc(100% - 60px);
+                background: #ddd;
+                left: 30px;
+            }
+
+            #menu li.active a span {
+                font-weight: 600;
+                color: #ff0077;
+            }
+
+            #menu li a {
+                color: #666;
+                text-transform: uppercase;
+                font-size: 22px;
+                display: block;
+                text-decoration: none;
+                padding: 14px 0;
+                position: relative;
+            }
+
+            #menu li a span {
+                position: absolute;
+                left: 50px;
+                font-weight: 400;
+            }
+
+            #menu li a i {
+                width: 30px;
+            }
+
+            .service-box {
+                margin-bottom: 20px;
+            }
+
+            .skill-category {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .title-section h1 {
+                font-size: 36px;
+            }
+
+            .title-bg {
+                font-size: 60px;
+            }
+
+            #menuToggle {
+                right: 10px;
+                top: 10px;
+            }
+
+            .custom-title {
+                font-size: 22px;
+            }
+
+            .service-box {
+                padding: 25px 15px;
+            }
+
+            .service-icon {
+                font-size: 35px;
+            }
+
+            .service-box h4 {
+                font-size: 16px;
+            }
+
+            .skill-item {
+                padding: 12px 15px;
+            }
+
+            .skill-item .skill-name {
+                font-size: 14px;
+            }
+
+            .skill-tag {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+            hr.separator {
+                margin: 40px auto 30px;
+            }
+        }
+    </style>
 </head>
 
 <body class="about light">
 
-<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-<!-- Live Style Switcher Ends - demo only -->
 <!-- Header Starts -->
 <header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+    <!-- Desktop Navigation -->
+    <ul class="icon-menu d-none d-lg-block">
         <li class="icon-box">
             <i class="fa fa-home"></i>
             <a href="index.html">
                 <h2>Home</h2>
             </a>
         </li>
-        <li class="icon-box ">
+        <li class="icon-box">
             <i class="fa fa-user"></i>
             <a href="about.html">
                 <h2>About</h2>
@@ -91,52 +643,52 @@
             </a>
         </li>
     </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li class=""><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li class="active"><a href="skills.html"><i class="fa fa-cogs"></i><span>Skills</span></a></li>
-
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
-                <li><a href="certifications.html"><i class="fa fa-graduation-cap"></i><span>Certifications</span></a></li> </ul>
-        </div>
-    </nav>
-    <!-- Mobile Menu Ends -->
 </header>
-<!-- Header Ends -->
-<!-- Page Title Starts -->
-<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>MY <span>Skills</span></h1>
+
+<!-- Mobile Menu -->
+<nav role="navigation" class="d-block d-lg-none">
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="list-unstyled" id="menu">
+            <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+            <li class="active"><a href="skills.html"><i class="fa fa-cogs"></i><span>Skills</span></a></li>
+            <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+            <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+            <li><a href="certifications.html"><i class="fa fa-graduation-cap"></i><span>Certifications</span></a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Page Title -->
+<section class="title-section text-left text-sm-center">
+    <h1>MY <span>SKILLS</span></h1>
     <span class="title-bg">Resume</span>
 </section>
-<div class="col-12">
-    <h3 class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600">My Services</h3>
-</div>
-<!-- Services Section Starts -->
-<section class="services-section revealator-slideup revealator-once revealator-delay1">
+
+<!-- Services Section -->
+<section class="services-section">
     <div class="container">
-        
         <div class="row">
-           
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600">My Services</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
                     <i class="fa fa-code service-icon"></i>
                     <h4 class="text-uppercase mt-3">Web Development</h4>
                     <p class="open-sans-font mt-2">
-                        Crafting responsive and dynamic websites with modern technologies like HTML, CSS, JavaScript, and framework Angular.
+                        Crafting responsive and dynamic websites with modern technologies like HTML, CSS, JavaScript, and Angular framework.
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
                     <i class="fa fa-mobile service-icon"></i>
                     <h4 class="text-uppercase mt-3">Mobile Development</h4>
@@ -145,29 +697,27 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
                     <i class="fa fa-database service-icon"></i>
                     <h4 class="text-uppercase mt-3">Backend Development</h4>
                     <p class="open-sans-font mt-2">
-                        Developing robust backend systems with Java, Spring Boot, and MongoDB ,MySQL for secure and efficient APIs.
+                        Developing robust backend systems with Java, Spring Boot, MongoDB, and MySQL for secure and efficient APIs.
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
-                    <i class="fa fa-cogs service-icon"></i> <!-- Icône mise à jour pour correspondre à DevOps -->
+                    <i class="fa fa-cogs service-icon"></i>
                     <h4 class="text-uppercase mt-3">DevOps Solutions</h4>
                     <p class="open-sans-font mt-2">
-                        Implementing DevOps and DevSecOps practices to automate and secure the development and deployment pipelines. 
-                        Using tools like Git, GitLab, GitHub for source code management and CI/CD
+                        Implementing DevOps and DevSecOps practices to automate and secure development pipelines using Git, GitLab, Docker, and CI/CD.
                     </p>
                 </div>
             </div>
-            
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#ff0077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
                         <path d="M2 17l10 5 10-5"></path>
                         <path d="M2 12l10 5 10-5"></path>
@@ -178,10 +728,7 @@
                     </p>
                 </div>
             </div>
-            
-            
-         
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
                     <i class="fa fa-line-chart service-icon"></i>
                     <h4 class="text-uppercase mt-3">Analytics & Optimization</h4>
@@ -193,62 +740,295 @@
         </div>
     </div>
 </section>
-<!-- Services Section Ends -->
 
-<section class="main-content revealator-slideup revealator-once revealator-delay1">
+<hr class="separator">
+
+<!-- Technical Skills Section -->
+<section class="skills-section">
     <div class="container">
         <div class="row">
-            <!-- Personal Info Starts -->
-            <div class="col-12 col-lg-5 col-xl-6">
-                <div class="row">
-                    
-                   
-                  
-                    
-                   
-                    
-                </div>
+            <div class="col-12">
+                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600">Technical Skills</h3>
             </div>
-            <!-- Personal Info Ends -->
-        
-<!-- Contract Section Ends -->
-
-            <!-- Contract Section Starts -->
-            
-            
-            <!-- Contract Section Ends -->
-            <hr class="separator mt-1">
-            <!-- Boxes Ends -->
         </div>
         
-        <hr class="separator">
-        <!-- Skills Starts -->
-       
-        <!-- Skills Ends -->
-        
-        <!-- Experience & Education Starts -->
-       
-            
-            
-</section>
-<!-- Main Content Ends -->
+        <!-- Programming Languages -->
+        <div class="skill-category">
+            <h4 class="poppins-font"><i class="fa fa-code"></i> Programming Languages</h4>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-name">TypeScript</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="skill-item">
+                        <div class="skill-name">Dart</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+        <!-- Frameworks & Technologies -->
+        <div class="skill-category">
+            <h4 class="poppins-font"><i class="fa fa-laptop"></i> Frameworks & Technologies</h4>
+            <div class="skill-tags">
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Angular</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">Tailwind CSS</span>
+            </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category">
+            <h4 class="poppins-font"><i class="fa fa-database"></i> Databases</h4>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="skill-item">
+                        <div class="skill-name">PostgreSQL</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="skill-item">
+                        <div class="skill-name">MySQL</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="skill-item">
+                        <div class="skill-name">MongoDB</div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DevOps & Cloud -->
+        <div class="skill-category">
+            <h4 class="poppins-font"><i class="fa fa-cloud"></i> DevOps & Cloud</h4>
+            <div class="skill-tags">
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">GitLab CI/CD</span>
+                <span class="skill-tag">OVH</span>
+                <span class="skill-tag">Keycloak</span>
+                <span class="skill-tag">Liquibase</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+            </div>
+        </div>
+
+        <!-- Quality & Testing -->
+        <div class="skill-category">
+            <h4 class="poppins-font"><i class="fa fa-check-circle"></i> Quality & Testing</h4>
+            <div class="skill-tags">
+                <span class="skill-tag">JUnit</span>
+                <span class="skill-tag">Selenium</span>
+                <span class="skill-tag">Postman</span>
+                <span class="skill-tag">Unit Testing</span>
+                <span class="skill-tag">Functional Testing</span>
+            </div>
+        </div>
+
+        <!-- SEO & Performance -->
+        <div class="skill-category">
+            <h4 class="poppins-font"><i class="fa fa-rocket"></i> SEO & Performance</h4>
+            <div class="skill-tags">
+                <span class="skill-tag">SEO Optimization</span>
+                <span class="skill-tag">Angular SEO</span>
+                <span class="skill-tag">Page Load Optimization</span>
+                <span class="skill-tag">Accessibility</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="separator">
+
+<!-- Soft Skills Section -->
+<section class="soft-skills-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600">Interpersonal Skills</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3 mb-4">
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h5 class="poppins-font">Agile Methodologies<br>(Scrum, Kanban)</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fa fa-handshake-o"></i>
+                    </div>
+                    <h5 class="poppins-font">Team Collaboration</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <h5 class="poppins-font">Priority Management & Deadlines</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon">
+                        <i class="fa fa-lightbulb-o"></i>
+                    </div>
+                    <h5 class="poppins-font">Initiative & Adaptability</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="separator">
+
+<!-- Call to Action -->
+<section class="cta-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="poppins-font mb-4" style="color: #666; font-weight: 600;">Ready to Work Together?</h3>
+                <p class="open-sans-font mb-4" style="font-size: 16px; color: #666;">
+                    Let's collaborate and build something amazing together. I'm available for both short-term and long-term projects.
+                </p>
+                <a href="contact.html" class="btn btn-custom">
+                    <i class="fa fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .cta-section {
+        padding: 60px 0;
+        background: linear-gradient(135deg, rgba(255, 0, 119, 0.05) 0%, rgba(255, 0, 119, 0.1) 100%);
+        border-radius: 15px;
+        margin: 50px 0;
+    }
+
+    .btn-custom {
+        background: #ff0077;
+        color: #fff;
+        padding: 15px 40px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+        border: 2px solid #ff0077;
+    }
+
+    .btn-custom:hover {
+        background: transparent;
+        color: #ff0077;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(255, 0, 119, 0.2);
+    }
+
+    .btn-custom i {
+        margin-right: 8px;
+    }
+</style>
+
+<!-- JavaScript for animations -->
+<script>
+    // Animate progress bars on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        const progressBars = document.querySelectorAll('.skill-progress-bar');
+        
+        const animateProgressBars = () => {
+            progressBars.forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+                
+                if (isVisible && !bar.classList.contains('animated')) {
+                    const width = bar.style.width;
+                    bar.style.width = '0';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                        bar.classList.add('animated');
+                    }, 100);
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateProgressBars);
+        animateProgressBars(); // Initial check
+    });
+
+    // Add hover effect to skill tags
+    const skillTags = document.querySelectorAll('.skill-tag');
+    skillTags.forEach(tag => {
+        tag.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.05) rotate(2deg)';
+        });
+        tag.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1) rotate(0deg)';
+        });
+    });
+
+    // Add counter animation for service boxes
+    const serviceBoxes = document.querySelectorAll('.service-box');
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    entry.target.style.transition = 'all 0.6s ease';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, 100);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    serviceBoxes.forEach(box => observer.observe(box));
+</script>
 
 </body>
-
-
-<!-- Mirrored from slimhamdi.net/tunis/light/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:19 GMT -->
 </html>

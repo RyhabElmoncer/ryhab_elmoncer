@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Mirrored from slimhamdi.net/tunis/light/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:23 GMT -->
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Software Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO Meta Tags -->
+    <title>Portfolio - Développeur Full Stack Expert | Angular, Flutter, Spring Boot</title>
+    <meta name="description" content="Portfolio professionnel d'un développeur Full Stack spécialisé en Angular, Flutter, Spring Boot. Solutions e-commerce, applications mobiles et web innovantes.">
+    <meta name="keywords" content="développeur full stack, Angular, Flutter, Spring Boot, développement web, développement mobile, e-commerce, portfolio développeur, DevSecOps, CI/CD">
+    <meta name="author" content="Développeur Full Stack">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Portfolio - Développeur Full Stack Expert">
+    <meta property="og:description" content="Découvrez mes réalisations en développement web et mobile : plateformes e-commerce, applications Flutter, solutions Spring Boot">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/projects/image.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - Développeur Full Stack Expert">
+    <meta name="twitter:description" content="Projets innovants en Angular, Flutter et Spring Boot">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://votre-domaine.com/portfolio.html">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Développeur Full Stack",
+      "jobTitle": "Développeur Full Stack Senior",
+      "url": "https://votre-domaine.com",
+      "sameAs": [
+        "https://linkedin.com/in/votre-profil",
+        "https://github.com/votre-profil"
+      ],
+      "knowsAbout": ["Angular", "Flutter", "Spring Boot", "DevSecOps", "CI/CD", "Microservices"],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification"
+      }
+    }
+    </script>
 
     <!-- Template Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -18,11 +56,9 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- CSS Skin File -->
     <link href="css/skins/magenta.css" rel="stylesheet">
 
-    <!-- Live Style Switcher - demo only -->
+    <!-- Live Style Switcher -->
     <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
     <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
     <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
@@ -35,32 +71,287 @@
     <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
 
-    <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
+    
+    <style>
+        /* Styles améliorés pour un design plus professionnel */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --success-color: #27ae60;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --hover-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .portfolio-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            font-size: 18px;
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .portfolio-filter {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .filter-btn {
+            background: transparent;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            padding: 8px 20px;
+            margin: 0 5px 10px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--secondary-color);
+            color: white;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .portfolio-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--hover-shadow);
+        }
+        
+        .portfolio-img {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .portfolio-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .portfolio-card:hover .portfolio-img img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 62, 80, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-overlay a {
+            color: white;
+            background: var(--secondary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-overlay a:hover {
+            background: var(--accent-color);
+            transform: scale(1.1);
+        }
+        
+        .portfolio-content {
+            padding: 20px;
+        }
+        
+        .portfolio-content h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .portfolio-content p {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .portfolio-tag {
+            background: var(--light-color);
+            color: var(--dark-color);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .tech-angular {
+            background: #dd0031;
+        }
+        
+        .tech-flutter {
+            background: #02569b;
+        }
+        
+        .tech-spring {
+            background: #6db33f;
+        }
+        
+        .tech-firebase {
+            background: #ffa000;
+        }
+        
+        .tech-mongo {
+            background: #47a248;
+        }
+        
+        .tech-docker {
+            background: #2496ed;
+        }
+        
+        .tech-aws {
+            background: #ff9900;
+        }
+        
+        .project-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .section-title p {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .portfolio-section {
+                padding: 60px 0;
+            }
+        }
+    </style>
 </head>
 
 <body class="portfolio light">
 
 <!-- Header Starts -->
 <header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
+    <!-- Fixed Navigation -->
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
         <li class="icon-box">
             <i class="fa fa-home"></i>
             <a href="index.html">
-                <h2>Home</h2>
+                <h2>Accueil</h2>
             </a>
         </li>
         <li class="icon-box">
             <i class="fa fa-user"></i>
             <a href="about.html">
-                <h2>About</h2>
+                <h2>À Propos</h2>
             </a>
         </li>
         <li class="icon-box">
             <i class="fa fa-cogs"></i>
             <a href="skills.html">
-                <h2>Skills</h2>
+                <h2>Compétences</h2>
             </a>
         </li>
         <li class="icon-box active">
@@ -88,18 +379,18 @@
             </a>
         </li>
     </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
+    
+    <!-- Mobile Menu -->
     <nav role="navigation" class="d-block d-lg-none">
         <div id="menuToggle">
-            <input type="checkbox" />
+            <input type="checkbox" aria-label="Toggle menu" />
             <span></span>
             <span></span>
             <span></span>
             <ul class="list-unstyled" id="menu">
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="skills.html"><i class="fa fa-cogs"></i><span>Skills</span></a></li>
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Accueil</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>À Propos</span></a></li>
+                <li><a href="skills.html"><i class="fa fa-cogs"></i><span>Compétences</span></a></li>
                 <li class="active"><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
                 <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                 <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
@@ -107,891 +398,479 @@
             </ul>
         </div>
     </nav>
-    <!-- Mobile Menu Ends -->
 </header>
 <!-- Header Ends -->
-<!-- Page Title Starts -->
+
+<!-- Page Title -->
 <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>my <span>portfolio</span></h1>
-    <span class="title-bg">works</span>
+    <h1>Mon <span>Portfolio</span></h1>
+    <span class="title-bg">Projets</span>
 </section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
 
-<section class="main-content text-center revealator-slideup revealator-once revealator-delay1">
-    <div id="grid-gallery" class="container grid-gallery">
-        <!-- Portfolio Grid Starts -->
-        <section class="grid-wrap">
-            <ul class="row grid">
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/image.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">Plateforme multi-vendeurs</h5>
-                                <p class="card-description">Angular, Flutter, Spring Boot, DevSecOps, CI/CD</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+<!-- Main Content -->
+<section class="portfolio-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Mes Réalisations</h2>
+            <p>Découvrez une sélection de mes projets les plus significatifs en développement Full Stack</p>
+        </div>
+        
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="flutter">Flutter</button>
+            <button class="filter-btn" data-filter="spring">Spring Boot</button>
+        </div>
+        
+        <div class="portfolio-grid">
+            <!-- Projet 1: Plateforme multi-vendeurs -->
+            <div class="portfolio-card" data-category="ecommerce web flutter spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/image.png" alt="Plateforme e-commerce multi-vendeurs Venta">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
                     </div>
-                </li>
-                
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/admin/Franchhhh.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">Espace administrateur</h5>
-                                <p class="card-description">Spring Boot, Angular, CI/CD</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                    <span class="project-category">E-commerce</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Plateforme Multi-Vendeurs</h3>
+                    <p>Solution complète e-commerce avec gestion multi-vendeurs, paiement en ligne et système de livraison intégré.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-angular">Angular</span>
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge tech-docker">Docker</span>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/livreur/cap.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">Espace livreur</h5>
-                                <p class="card-description">Spring Boot, Flutter</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                </div>
+            </div>
+            
+            <!-- Projet 2: Espace administrateur -->
+            <div class="portfolio-card" data-category="web spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/admin/Franchhhh.png" alt="Interface administrateur Venta">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/E-leranign/home.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">plateforme de cours en ligne</h5>
-                                <p class="card-description">Spring Boot, Angular</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                    <span class="project-category">Dashboard</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Espace Administrateur</h3>
+                    <p>Dashboard complet pour la gestion des utilisateurs, produits, commandes et statistiques de vente.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-angular">Angular</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">REST API</span>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/food/food app.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">FOOD-APP</h5>
-                                <p class="card-description">Flutter</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                </div>
+            </div>
+            
+            <!-- Projet 3: Espace livreur -->
+            <div class="portfolio-card" data-category="mobile flutter spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/livreur/cap.png" alt="Application mobile livreur">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/paramarket/liste.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">ParaMarket</h5>
-                                <p class="card-description">Spring Boot, Angular</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                    <span class="project-category">Mobile</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Espace Livreur</h3>
+                    <p>Application mobile pour livreurs avec géolocalisation, gestion de tournées et notifications en temps réel.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge tech-firebase">Firebase</span>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/cabinet/2.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">cabinetMedical</h5>
-                                <p class="card-description">Cabinet Médical 🏥</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                </div>
+            </div>
+            
+            <!-- NOUVEAU Projet: Bibo (Flutter) -->
+            <div class="portfolio-card" data-category="mobile flutter">
+                <div class="portfolio-img">
+                    <img src="img/projects/bibo/bibo.png" alt="Application Bibo">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/SAV/1.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">application après-vente SAV</h5>
-                                <p class="card-description">application après-vente SAV</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                    <span class="project-category">Mobile</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Bibo - Application de Lecture</h3>
+                    <p>Application mobile de lecture et partage de livres numériques avec système de recommandations personnalisées.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-firebase">Firebase</span>
+                        <span class="tech-badge">Provider</span>
+                        <span class="tech-badge">SQLite</span>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/QRCode/capQR.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">menu restaurants QR Code</h5>
-                                <p class="card-description">Spring Boot, Flutter</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                </div>
+            </div>
+            
+            <!-- NOUVEAU Projet: Salony Spécialiste (Flutter & Spring Boot) -->
+            <div class="portfolio-card" data-category="mobile web flutter spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/salony/specialiste.png" alt="Salony Spécialiste">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/Edulink/edu.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">SkillMaster</h5>
-                                <p class="card-description">Spring Boot, Flutter</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                    <span class="project-category">Services</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Salony Spécialiste</h3>
+                    <p>Plateforme de mise en relation entre clients et professionnels de beauté avec système de réservation et paiement.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge tech-mongo">MongoDB</span>
+                        <span class="tech-badge">Stripe API</span>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/mskils/login.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">Edulink</h5>
-                                <p class="card-description">Spring Boot, Flutter, Figma</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                </div>
+            </div>
+            
+            <!-- NOUVEAU Projet: Salony Customer (Flutter & Spring Boot) -->
+            <div class="portfolio-card" data-category="mobile flutter spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/salony/customer.png" alt="Salony Customer">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/tradigo/cap.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">TradiGo-google-translate</h5>
-                                <p class="card-description">Flutter</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                    <span class="project-category">Mobile</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Salony Customer</h3>
+                    <p>Application client pour la réservation de services de beauté avec géolocalisation et système de notation.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">Google Maps</span>
+                        <span class="tech-badge">Push Notifications</span>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/chariot/cap2.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">Chariot Intelligent</h5>
-                                <p class="card-description">Flutter, Firebase</p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                </div>
+            </div>
+            
+            <!-- Projet 4: Plateforme E-learning -->
+            <div class="portfolio-card" data-category="web spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/E-leranign/home.png" alt="Plateforme de cours en ligne">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
                     </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="card" style="border: 2px solid rgba(0, 128, 0, 0.242); margin-bottom: 20px;">
-                        <figure>
-                            <img src="img/projects/restau/cap1.png" alt="Portfolio Image" class="card-img-top" />
-                            <!-- Afficher les détails par défaut -->
-                            <figcaption>
-                                <h5 class="card-title">Gestion des commandes d’un restaurant</h5>
-                                <p class="card-description">Flutter, spring boot </p>
-                            </figcaption>
-                        </figure>
-                        <button class="btn btn-primary" onclick="toggleDetails('details-1')">View Details</button>
+                    <span class="project-category">Éducation</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Plateforme de Cours en Ligne</h3>
+                    <p>Système complet d'apprentissage en ligne avec vidéos, quiz interactifs et suivi de progression.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-angular">Angular</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">MySQL</span>
                     </div>
-                </li>
-            </ul>
-        </section>
-        <!-- Portfolio Grid Ends -->
-        <!--detail t3 projet -->  
+                </div>
+            </div>
+            
+            <!-- Projet 5: FOOD-APP -->
+            <div class="portfolio-card" data-category="mobile flutter">
+                <div class="portfolio-img">
+                    <img src="img/projects/food/food app.png" alt="Application mobile restaurant">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Restauration</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>FOOD-APP</h3>
+                    <p>Application de commande de nourriture avec système de livraison et paiement mobile intégré.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-firebase">Firebase</span>
+                        <span class="tech-badge">Stripe</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 6: ParaMarket -->
+            <div class="portfolio-card" data-category="ecommerce web spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/paramarket/liste.png" alt="Plateforme e-commerce ParaMarket">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">E-commerce</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>ParaMarket</h3>
+                    <p>Marketplace local avec système de recommandations et gestion avancée des stocks.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-angular">Angular</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">Elasticsearch</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 7: Cabinet Médical -->
+            <div class="portfolio-card" data-category="web spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/cabinet/2.png" alt="Application gestion cabinet médical">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Santé</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Cabinet Médical 🏥</h3>
+                    <p>Système de gestion de cabinet médical avec prise de rendez-vous, dossiers patients et facturation.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-angular">Angular</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">Spring Security</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 8: SAV -->
+            <div class="portfolio-card" data-category="web spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/SAV/1.png" alt="Application après-vente SAV">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Support</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Application SAV</h3>
+                    <p>Plateforme de gestion des réclamations et du service après-vente avec suivi en temps réel.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-angular">Angular</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 9: Menu QR Code -->
+            <div class="portfolio-card" data-category="mobile flutter spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/QRCode/capQR.png" alt="Menu restaurant QR Code">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Restauration</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Menu Restaurant QR Code</h3>
+                    <p>Système de menus numériques avec génération de QR codes et commande directe depuis table.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">QR Code</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 10: SkillMaster -->
+            <div class="portfolio-card" data-category="mobile flutter spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/Edulink/edu.png" alt="Plateforme apprentissage SkillMaster">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Éducation</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>SkillMaster</h3>
+                    <p>Plateforme d'apprentissage collaboratif avec chat en temps réel et évaluation des compétences.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 11: Edulink -->
+            <div class="portfolio-card" data-category="mobile flutter">
+                <div class="portfolio-img">
+                    <img src="img/projects/mskils/login.png" alt="Réseau social étudiants Edulink">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Social</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Edulink</h3>
+                    <p>Réseau social éducatif pour étudiants avec partage de ressources et groupes d'étude.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">Figma</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 12: TradiGo -->
+            <div class="portfolio-card" data-category="mobile flutter">
+                <div class="portfolio-img">
+                    <img src="img/projects/tradigo/cap.png" alt="Application traduction TradiGo">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Utilitaires</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>TradiGo - Google Translate</h3>
+                    <p>Application de traduction avec reconnaissance vocale et sauvegarde de l'historique.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge">Google API</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 13: Chariot Intelligent -->
+            <div class="portfolio-card" data-category="mobile flutter">
+                <div class="portfolio-img">
+                    <img src="img/projects/chariot/cap2.png" alt="Chariot intelligent IoT">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">IoT</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Chariot Intelligent</h3>
+                    <p>Solution IoT pour chariots de supermarché avec scan automatique et paiement sans contact.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-firebase">Firebase</span>
+                        <span class="tech-badge">IoT</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projet 14: Gestion Restaurant -->
+            <div class="portfolio-card" data-category="mobile flutter spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/restau/cap1.png" alt="Gestion commandes restaurant">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Restauration</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Gestion Commandes Restaurant</h3>
+                    <p>Système de gestion de commandes pour restaurants avec interface tablette et cuisine.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">WebSocket</span>
+                    </div>
+                </div>
+            </div>
 
-        <section class="slideshow">
-            <ul>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>Venta Plateforme multi-vendeurs</h3>
-                            <div class="row open-sans-font">
-                                <div class="col-12 mb-2">
-                                    <i class="fa fa-file-text-o pr-2"></i>
-                                    <span class="project-label">Project</span>: 
-                                    <span class="ft-wt-600 uppercase">Développement et Déploiement d'une Plateforme E-Commerce multi-vendeurs Web et Mobile sur un pipeline (CI/CD) sécurisé (DevSecOps)</span>
-                                </div>
-                               
-                                <div class="col-12 mb-2">
-                                    <i class="fa fa-code pr-2"></i>
-                                    <span class="project-label">mots-clés</span>: 
-                                    <span class="ft-wt-600 uppercase">Angular, Flutter, Spring Boot, MongoDB, JWT, Geolocator, DevSecOps, CI/CD, Docker, GitLab CI, Postman, MVVM</span>
-                                </div>
-                            </div>
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <video id="video" class="responsive-video" controls poster="img/projects/image.png">
-                            <source src="img/projects/vidioproject/vvvvvvvvvvvvvvvvvvvvvvv.mp4" type="video/mp4">
-                        </video>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>Venta Web</h3>
-                            <div class="row open-sans-font">
-                                <div class="col-12 mb-2">
-                                    <i class="fa fa-file-text-o pr-2"></i>
-                                    <span class="project-label">Project</span>: 
-                                    <span class="ft-wt-600 uppercase">Espace administrateur</span>
-                                </div>
-                                
-                                <div class="col-12 mb-2">
-                                    <i class="fa fa-code pr-2"></i>
-                                    <span class="project-label">mots-clés</span>: 
-                                    <span class="ft-wt-600 uppercase">Angular, Spring Boot, MongoDB, JWT, DevSecOps, CI/CD, Docker, GitLab CI, MVVM</span>
-                                </div>
-                            </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                                <li data-target="#slider" data-slide-to="4"></li>
-                                <li data-target="#slider" data-slide-to="5"></li>
-                                <li data-target="#slider" data-slide-to="6"></li>
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/admin/venta.png" alt="slide 0">
-                                </div>
-                                <div class="carousel-item active">
-                                    <img src="img/projects/admin/venta.png" alt="slide 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/admin/liste vendeur.png" alt="slide 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/admin/Ajoutersousadmin.png" alt="slide 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/admin/ajoutlivreur.png" alt="slide 4">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/admin/listeclient.png" alt="slide 5">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/admin/listelivreur.png" alt="slide 6">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <!-- Portfolio Item Detail Starts -->
-                
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>Venta Livreur</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">Espace Livreur</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Flutter, Spring Boot, MongoDB, JWT, Geolocator, MVVM</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                                <li data-target="#slider" data-slide-to="4"></li>
-                                <li data-target="#slider" data-slide-to="5"></li>
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/livreur/cap.png" alt="slide 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/livreur/dach.png" alt="slide 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/livreur/cap.png" alt="slide 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/livreur/login.png" alt="slide 4">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/livreur/deta.png" alt="slide 5">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>plateforme de cours en ligne</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">plateforme de cours en ligne</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Angular, Spring Boot, MongoDB, JWT, MVVM</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                               
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/E-leranign/home.png" alt="slide 1">
-                                </div>
-                            
-                               
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-               
-                <!-- Portfolio Item Detail Starts -->
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>FOOD-APP</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">FOOD-APP</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Flutter, MVVM</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                               
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/food/home1.jpg" alt="slide 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/food/CRT.jpg" alt="slide 2">
-                                </div>
-                              
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>ParaMarket</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">ParaMarket</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Angular, Spring Boot, Mysql, JWT, MVC, MVVM</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                               
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/paramarket/home.png" alt="slide 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/paramarket/panier.png" alt="slide 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/paramarket/liste.png" alt="slide 3">
-                                </div>
-                               
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>Cabinet Médical 🏥</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">Cabinet Médical 🏥 Une application de gestion de cabinet médical permettant aux médecins de gérer les patients, les ordonnances et de sécuriser les données avec avec Back-end** : Spring Boot, Spring Security, JPA/Hibernate. Front-end : Angular 18</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Back-end** : Spring Boot, Spring Security, JPA/Hibernate. Front-end** : Angular 18</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                                <li data-target="#slider" data-slide-to="4"></li>
-                                <li data-target="#slider" data-slide-to="5"></li>
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/cabinet/1.png" alt="slide 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/cabinet/2.png" alt="slide 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/cabinet/3.png" alt="slide 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/cabinet/4.png" alt="slide 4">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>application SAV</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">Ce projet est une application web développée avec Spring Boot (backend) et Angular (frontend) pour automatiser le service après-vente (SAV) d'une entreprise spécialisée dans les articles sanitaires et les chauffages centraux.</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Back-end** : Spring Boot, Spring Security, JPA/Hibernate. Front-end** : Angular 18</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                                <li data-target="#slider" data-slide-to="4"></li>
-                                <li data-target="#slider" data-slide-to="5"></li>
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/SAV/1.png" alt="slide 1">
-                                </div>
-                               
-                            
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>Menu Code QR</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">menu restaurants QR Code</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Flutter, Spring Boot, Mysql, JWT, MVC, MVVM</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                                <li data-target="#slider" data-slide-to="4"></li>
-                                <li data-target="#slider" data-slide-to="5"></li>
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/QRCode/comm.png" alt="slide 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/QRCode/admin.png" alt="slide 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/QRCode/code.png" alt="slide 3">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/QRCode/ppp.png" alt="slide 4">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/QRCode/pro.png" alt="slide 5">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>SkillMaster</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">SkillMaster est une plateforme d'apprentissage en ligne similaire à Udemy, offrant un large éventail de cours avec suivi de progression, leçons détaillées, et certifications pour développer vos compétences à votre rythme.</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Flutter, Spring Boot, MangoDB, JWT, MVC, MVVM, Figma, Websocket</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                           
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/Edulink/HOME.png" alt="slide 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/Edulink/HOME.png" alt="slide 2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/Edulink/LOGIN.png" alt="slide 3">
-                                </div> <div class="carousel-item">
-                                    <img src="img/projects/Edulink/PROFILE.png" alt="slide 4">
-                                </div>
-                               
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>Réseau Social pour Étudiants</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">Réseau Social pour Étudiants</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Flutter, Spring Boot, MangoDB, JWT, MVC, MVVM, Figma, Websocket</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                           
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/mskils/login.png" alt="slide 1">
-                                </div>
-                                
-                               
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>TradiGo-google-translate</h3>
-                            <div class="row open-sans-font">
-                                <div class="row open-sans-font">
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-file-text-o pr-2"></i>
-                                        <span class="project-label">Project</span>: 
-                                        <span class="ft-wt-600 uppercase">TradiGo est une application moderne conçue pour rendre les traductions entre langues rapides et intuitives. Avec une architecture robuste et des fonctionnalités avancées.</span>
-                                    </div>
-                                   
-                                    <div class="col-12 mb-2">
-                                        <i class="fa fa-code pr-2"></i>
-                                        <span class="project-label">mots-clés</span>: 
-                                        <span class="ft-wt-600 uppercase">Flutter</span>
-                                    </div>
-                                </div>
-                            
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                                <li data-target="#slider" data-slide-to="2"></li>
-                                <li data-target="#slider" data-slide-to="3"></li>
-                           
-                            </ol>
-                            <!-- The slideshow -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/tradigo/cap.png" alt="slide 1">
-                                </div>
-                                
-                               
-                            </div>
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-    <!--chariot-->
-     <li>
-         <figure>
-             <!-- Project Details Starts -->
-             <figcaption>
-                 <h3>Chariot Intelligent</h3>
-                 <div class="row open-sans-font">
-                     <div class="col-12 mb-2">
-                         <i class="fa fa-file-text-o pr-2"></i>
-                         <span class="project-label">Projet</span> :
-                         <span class="ft-wt-600 uppercase">
-                    Une application innovante avec une architecture robuste et des fonctionnalités avancées.
-                </span>
-                     </div>
+            <!-- Projet 15: Televora -->
+            <div class="portfolio-card" data-category="web spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/televora/televora.png" alt="Plateforme streaming Televora">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Streaming</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Televora</h3>
+                    <p>Plateforme de streaming vidéo avec gestion de contenus, abonnements et recommandations.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-angular">Angular</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge tech-mongo">MongoDB</span>
+                    </div>
+                </div>
+            </div>
 
-                     <div class="col-12 mb-2">
-                         <i class="fa fa-code pr-2"></i>
-                         <span class="project-label">Mots-clés</span> :
-                         <span class="ft-wt-600 uppercase">Flutter, Firebase</span>
-                     </div>
-                 </div>
-             </figcaption>
-             <!-- Project Details Ends -->
+            <!-- Projet 16: Zone ASL Mobile -->
+            <div class="portfolio-card" data-category="mobile flutter">
+                <div class="portfolio-img">
+                    <img src="img/projects/zone-asl/zone-asl.png" alt="Application mobile Zone ASL">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">Mobile</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Zone ASL Mobile</h3>
+                    <p>Application de gestion et suivi de zones géographiques avec notifications en temps réel.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-firebase">Firebase</span>
+                        <span class="tech-badge">Geolocation</span>
+                    </div>
+                </div>
+            </div>
 
-             <!-- Main Project Content Starts -->
-             <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                 <ol class="carousel-indicators">
-                     <li data-target="#slider" data-slide-to="0" class="active"></li>
-                     <li data-target="#slider" data-slide-to="1"></li>
-                     <li data-target="#slider" data-slide-to="2"></li>
-                 </ol>
+            <!-- Projet 17: Imozon -->
+            <div class="portfolio-card" data-category="ecommerce web spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/imozon/imozon.png" alt="Plateforme e-commerce Imozon">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">E-commerce</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Imozon</h3>
+                    <p>Marketplace e-commerce avec architecture microservices et système de paiement sécurisé.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-angular">Angular</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">Microservices</span>
+                    </div>
+                </div>
+            </div>
 
-                 <div class="carousel-inner">
-                     <div class="carousel-item active">
-                         <img src="img/projects/chariot/cap2.png" alt="slide 1">
-                     </div>
-                     <div class="carousel-item">
-                         <img src="img/projects/chariot/cap3.png" alt="slide 2">
-                     </div>
-                     <div class="carousel-item">
-                         <img src="img/projects/chariot/AP1.png" alt="slide 3">
-                     </div>
-                 </div>
-
-                 <!-- Navigation Buttons -->
-                 <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-                     <span class="carousel-control-prev-icon"></span>
-                 </a>
-                 <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-                     <span class="carousel-control-next-icon"></span>
-                 </a>
-             </div>
-             <!-- Main Project Content Ends -->
-         </figure>
-
-
-     </li>
-                <li>
-                    <figure>
-                        <!-- Project Details Starts -->
-                        <figcaption>
-                            <h3>Gestion des commandes d’un restaurant</h3>
-                            <div class="row open-sans-font">
-                                <div class="col-12 mb-2">
-                                    <i class="fa fa-file-text-o pr-2"></i>
-                                    <span class="project-label">Projet</span> :
-                                    <span class="ft-wt-600 uppercase">
-                    Une application de gestion des commandes pour restaurants, avec une architecture robuste et des fonctionnalités avancées.
-                </span>
-                                </div>
-
-                                <div class="col-12 mb-2">
-                                    <i class="fa fa-code pr-2"></i>
-                                    <span class="project-label">Mots-clés</span> :
-                                    <span class="ft-wt-600 uppercase">Flutter, Spring Boot</span>
-                                </div>
-                            </div>
-                        </figcaption>
-                        <!-- Project Details Ends -->
-
-                        <!-- Main Project Content Starts -->
-                        <div id="slider" class="carousel slide portfolio-slider" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#slider" data-slide-to="0" class="active"></li>
-                                <li data-target="#slider" data-slide-to="1"></li>
-                            </ol>
-
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="img/projects/restau/liscp2.png" alt="Slide 0" class="img-fluid">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/projects/restau/cap1.png" alt="Slide 1" class="img-fluid">
-                                </div>
-                            </div>
-
-                            <!-- Navigation Buttons -->
-
-                        </div>
-                        <!-- Main Project Content Ends -->
-                    </figure>
-                </li>
-            </ul>
-            <!-- Portfolio Navigation Starts -->
-            <nav>
-                <span class="icon nav-prev"><img src="img/projects/navigation/left-arrow-light.png" alt="previous"></span>
-                <span class="icon nav-next"><img src="img/projects/navigation/right-arrow-light.png" alt="next"></span>
-                <span class="nav-close"><img src="img/projects/navigation/close-button-light.png" alt="close"> </span>
-            </nav>
-            <!-- Portfolio Navigation Ends -->
-        </section>
+            <!-- Projet 18: Caissatn -->
+            <div class="portfolio-card" data-category="mobile flutter spring">
+                <div class="portfolio-img">
+                    <img src="img/projects/caissatn/caissatn.png" alt="Système caisse Caissatn">
+                    <div class="portfolio-overlay">
+                        <a href="#" class="view-project"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="external-link"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <span class="project-category">POS</span>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Caissatn</h3>
+                    <p>Système de point de vente complet avec gestion inventaire et reporting avancé.</p>
+                    <div class="portfolio-tags">
+                        <span class="tech-badge tech-flutter">Flutter</span>
+                        <span class="tech-badge tech-spring">Spring Boot</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-<!-- Main Content Ends -->
 
 <!-- Template JS Files -->
 <script src="js/jquery-3.5.0.min.js"></script>
@@ -1007,7 +886,55 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
 
-</body>
+<script>
+    // Filtrage des projets
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioCards = document.querySelectorAll('.portfolio-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Retirer la classe active de tous les boutons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Ajouter la classe active au bouton cliqué
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                portfolioCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category').includes(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Animation au défilement
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        portfolioCards.forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    });
+</script>
 
-<!-- Mirrored from slimhamdi.net/tunis/light/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:26 GMT -->
+</body>
 </html>
