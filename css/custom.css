@@ -24,7 +24,8 @@ body.home.light .bg {
 
 /* ---- Profile photo – mobile ---- */
 .main-img-mobile {
-    content: url('../img/profile.jpg');
+    object-fit: cover;
+    object-position: top center;
 }
 
 /* ---- Nav active / hover – override pink ---- */
