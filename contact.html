@@ -191,6 +191,7 @@
             display: block;
             text-align: center;
             top: 15px;
+            pointer-events: none;
         }
 
         .header .icon-box h2 {
@@ -209,6 +210,7 @@
             height: 50px;
             font-size: 15px;
             background: #2D6FAC;
+            white-space: nowrap;
         }
 
         .header .icon-box a:hover h2 {
@@ -743,45 +745,31 @@
     <ul class="icon-menu d-none d-lg-block">
         <li class="icon-box">
             <i class="fa fa-home"></i>
-            <a href="index.html">
-                <h2>Home</h2>
-            </a>
+            <a href="index.html"><h2 data-fr="Accueil">Home</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-user"></i>
-            <a href="about.html">
-                <h2>About</h2>
-            </a>
+            <a href="about.html"><h2 data-fr="À Propos">About</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-cogs"></i>
-            <a href="skills.html">
-                <h2>Skills</h2>
-            </a>
+            <a href="skills.html"><h2 data-fr="Compétences">Skills</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-                <h2>Portfolio</h2>
-            </a>
+            <a href="portfolio.html"><h2>Portfolio</h2></a>
         </li>
         <li class="icon-box active">
             <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-                <h2>Contact</h2>
-            </a>
+            <a href="contact.html"><h2>Contact</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-comments"></i>
-            <a href="blog.html">
-                <h2>Blog</h2>
-            </a>
+            <a href="blog.html"><h2>Blog</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-graduation-cap"></i>
-            <a href="certifications.html">
-                <h2>Certifications</h2>
-            </a>
+            <a href="certifications.html"><h2 data-fr="Certifications">Certifications</h2></a>
         </li>
     </ul>
 </header>
@@ -794,9 +782,9 @@
         <span></span>
         <span></span>
         <ul class="list-unstyled" id="menu">
-            <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-            <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-            <li><a href="skills.html"><i class="fa fa-cogs"></i><span>Skills</span></a></li>
+            <li><a href="index.html"><i class="fa fa-home"></i><span data-fr="Accueil">Home</span></a></li>
+            <li><a href="about.html"><i class="fa fa-user"></i><span data-fr="À Propos">About</span></a></li>
+            <li><a href="skills.html"><i class="fa fa-cogs"></i><span data-fr="Compétences">Skills</span></a></li>
             <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
             <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
             <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
@@ -807,7 +795,7 @@
 
 <!-- Page Title -->
 <section class="title-section text-left text-sm-center">
-    <h1>GET IN <span>TOUCH</span></h1>
+    <h1 data-fr-html="ME <span>CONTACTER</span>" data-en-html="GET IN <span>TOUCH</span>">GET IN <span>TOUCH</span></h1>
     <span class="title-bg">Contact</span>
 </section>
 

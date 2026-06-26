@@ -34,6 +34,7 @@ body.home.light .bg {
 }
 .header .icon-box h2 {
     background: #2D6FAC !important;
+    white-space: nowrap !important;
 }
 
 /* ---- Button global ---- */
@@ -41,6 +42,8 @@ body.home.light .bg {
     background-color: #2D6FAC !important;
     border-color: #2D6FAC !important;
 }
+.button .button-text,
+body.light .button .button-text { color: #fff !important; }
 .button:hover .button-text { color: #2D6FAC !important; }
 
 /* ---- Skills / contact pages: replace #ff0077 inline ---- */
@@ -62,10 +65,11 @@ body { }  /* placeholder to not leave file empty */
     background: linear-gradient(135deg, #0D2A45 0%, #163E65 50%, #1A5480 100%) !important;
 }
 .stat-number {
-    background: linear-gradient(90deg, #87BCE8, #2D6FAC) !important;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    color: #87BCE8 !important;
 }
 
 /* ---- Portfolio: card overlay ---- */
