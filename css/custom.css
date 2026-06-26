@@ -1,0 +1,102 @@
+/* =================================================================== */
+/* CUSTOM OVERRIDES — Ryhab Elmoncer Portfolio                         */
+/* Palette: Blue #2D6FAC · Light Blue #87BCE8 · Gray #607D8B          */
+/* =================================================================== */
+
+/* ---- CSS variables (used by inline <style> blocks) ---- */
+:root {
+    --primary:      #2D6FAC;
+    --primary-dark: #1A5480;
+    --primary-light:#87BCE8;
+    --accent:       #607D8B;
+    --bg-light:     #EDF4FB;
+    --bg-card:      #ffffff;
+    --text-dark:    #1A3A5C;
+    --text-mid:     #555e6e;
+}
+
+/* ---- Profile photo – desktop background ---- */
+body.home.light .bg {
+    background-image: url('../img/profile.jpg') !important;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* ---- Profile photo – mobile ---- */
+.main-img-mobile {
+    content: url('../img/profile.jpg');
+}
+
+/* ---- Nav active / hover – override pink ---- */
+.header ul.icon-menu li.icon-box.active,
+.header ul.icon-menu li.icon-box:hover {
+    background-color: #2D6FAC !important;
+}
+.header .icon-box h2 {
+    background: #2D6FAC !important;
+}
+
+/* ---- Button global ---- */
+.button, .button:before, .button-icon {
+    background-color: #2D6FAC !important;
+    border-color: #2D6FAC !important;
+}
+.button:hover .button-text { color: #2D6FAC !important; }
+
+/* ---- Skills / contact pages: replace #ff0077 inline ---- */
+body { }  /* placeholder to not leave file empty */
+
+/* ---- Language switcher ---- */
+.lang-btn.active { background: #2D6FAC !important; color: #fff !important; }
+
+/* ---- Portfolio: filter active ---- */
+.filter-btn.active {
+    background: #2D6FAC !important;
+    border-color: #2D6FAC !important;
+    box-shadow: 0 4px 15px rgba(45,111,172,.35) !important;
+}
+.filter-btn:hover { border-color: #2D6FAC !important; color: #2D6FAC !important; }
+
+/* ---- Portfolio: stats bar ---- */
+.stats-bar {
+    background: linear-gradient(135deg, #0D2A45 0%, #163E65 50%, #1A5480 100%) !important;
+}
+.stat-number {
+    background: linear-gradient(90deg, #87BCE8, #2D6FAC) !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---- Portfolio: card overlay ---- */
+.overlay-btn { background: #2D6FAC !important; }
+.overlay-btn:hover { background: #1A5480 !important; }
+
+/* ---- Portfolio section headers ---- */
+.section-header h2 span { color: #2D6FAC !important; }
+.section-badge.badge-pro { background: #dbeafe; color: #1A5480 !important; }
+
+/* ---- Skills / contact page: all #ff0077 override ---- */
+.skill-category h4 { border-left-color: #2D6FAC !important; }
+.skill-item:hover { border-color: #2D6FAC !important; }
+.skill-tag:hover { background: #2D6FAC !important; border-color: #2D6FAC !important; }
+.service-box:hover { border-color: #2D6FAC !important; box-shadow: 0 10px 30px rgba(45,111,172,.2) !important; }
+.service-icon { color: #2D6FAC !important; }
+.service-box:hover h4 { color: #2D6FAC !important; }
+.soft-skill-card:hover { border-color: #2D6FAC !important; box-shadow: 0 10px 25px rgba(45,111,172,.15) !important; }
+.soft-skill-icon { color: #2D6FAC !important; }
+.skill-item .skill-progress-bar { background: linear-gradient(90deg, #2D6FAC, #87BCE8) !important; }
+.skill-item .skill-item::before { background: linear-gradient(90deg, rgba(45,111,172,.1), transparent) !important; }
+.btn-custom { background: #2D6FAC !important; border-color: #2D6FAC !important; }
+.btn-custom:hover { color: #2D6FAC !important; }
+.cta-section { background: linear-gradient(135deg, rgba(45,111,172,.05) 0%, rgba(45,111,172,.1) 100%) !important; }
+.contact-icon { background: #2D6FAC !important; }
+.contact-item:hover { background: rgba(45,111,172,.05) !important; }
+.contact-info-card:hover { border-color: #2D6FAC !important; box-shadow: 0 10px 30px rgba(45,111,172,.15) !important; }
+.contact-details span { color: #2D6FAC !important; }
+.contact-details a:hover { color: #2D6FAC !important; }
+.social-links a:hover { background: #2D6FAC !important; }
+.btn-submit { background: #2D6FAC !important; border-color: #2D6FAC !important; }
+.btn-submit:hover { color: #2D6FAC !important; }
+.form-control:focus { border-color: #2D6FAC !important; box-shadow: 0 0 0 0.2rem rgba(45,111,172,.1) !important; }
+#menu li.active a span { color: #2D6FAC !important; }

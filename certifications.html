@@ -5,8 +5,73 @@
 <!-- Mirrored from slimhamdi.net/tunis/light/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Oct 2022 15:39:26 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Softwar Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===== PRIMARY SEO ===== -->
+    <title>Certifications – Elmoncer Ryhab | Scrum SFC · DevOps · Agile</title>
+    <meta name="description" content="Professional certifications of Elmoncer Ryhab: Scrum Fundamentals Certified (SFC), Scrum for Operations and DevOps. Full Stack Developer in Tunis, Tunisia.">
+    <meta name="keywords" content="Elmoncer Ryhab certifications, Scrum Fundamentals Certified SFC, DevOps Scrum, Agile certification, developer certifications Tunisia">
+    <meta name="author" content="Elmoncer Ryhab">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ff0077">
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elmoncer Ryhab – Portfolio">
+    <meta property="og:title" content="Certifications – Elmoncer Ryhab | Scrum SFC · DevOps">
+    <meta property="og:description" content="Scrum Fundamentals Certified (SFC) and Scrum for Operations & DevOps certifications – Elmoncer Ryhab.">
+    <meta property="og:image" content="https://ryhabelmoncer.github.io/img/Certif/scrum.png">
+    <meta property="og:url" content="https://ryhabelmoncer.github.io/certifications.html">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Certifications – Elmoncer Ryhab | Scrum SFC · DevOps">
+    <meta name="twitter:description" content="Scrum Fundamentals Certified (SFC) and Scrum for Operations & DevOps.">
+    <meta name="twitter:image" content="https://ryhabelmoncer.github.io/img/Certif/scrum.png">
+
+    <!-- ===== CANONICAL ===== -->
+    <link rel="canonical" href="https://ryhabelmoncer.github.io/certifications.html">
+    <link rel="alternate" hreflang="en" href="https://ryhabelmoncer.github.io/certifications.html">
+    <link rel="alternate" hreflang="x-default" href="https://ryhabelmoncer.github.io/certifications.html">
+
+    <!-- ===== STRUCTURED DATA — Certifications ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Certifications – Elmoncer Ryhab",
+      "url": "https://ryhabelmoncer.github.io/certifications.html",
+      "author": { "@type": "Person", "name": "Elmoncer Ryhab" },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Scrum Fundamentals Certified (SFC)",
+              "credentialCategory": "certification",
+              "dateCreated": "2024-03-25",
+              "recognizedBy": { "@type": "Organization", "name": "SCRUMstudy" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Scrum for Operations and DevOps",
+              "credentialCategory": "certification",
+              "dateCreated": "2024-03-26",
+              "recognizedBy": { "@type": "Organization", "name": "SCRUMstudy" }
+            }
+          }
+        ]
+      }
+    }
+    </script>
 
     <!-- Template Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -20,10 +85,18 @@
     <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- CSS Skin File -->
-    <link href="css/skins/magenta.css" rel="stylesheet">
+    <!-- CSS Skin & Custom Theme -->
+    <link href="css/skins/steel-blue.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Live Style Switcher - demo only -->
+    <style>
+        .lang-switcher { position:fixed; bottom:30px; left:30px; z-index:9999; display:flex; border-radius:24px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.18); }
+        .lang-btn { background:#fff; border:none; color:#555; padding:8px 16px; font-size:13px; font-weight:700; cursor:pointer; transition:all .25s; }
+        .lang-btn.active { background:#2D6FAC; color:#fff; }
+        .lang-btn:hover:not(.active) { background:#f5f5f5; }
+    </style>
+
+    <!-- Live Style Switcher -->
     <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
     <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
     <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
@@ -41,8 +114,11 @@
 </head>
 
 <body class="blog light">
-<!-- Live Style Switcher Starts - demo only -->
-<!-- Live Style Switcher Ends - demo only -->
+<!-- Language Switcher -->
+<div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button>
+    <button class="lang-btn"        data-lang="fr" onclick="switchLang('fr')">FR</button>
+</div>
 <!-- Header Starts -->
 <header class="header" id="navbar-collapse-toggle">
     <!-- Fixed Navigation Starts -->
@@ -200,7 +276,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
-
+<script src="js/lang.js"></script>
 </body>
 
 

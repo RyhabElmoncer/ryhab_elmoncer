@@ -2,8 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Software Developer - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===== PRIMARY SEO ===== -->
+    <title>Contact – Elmoncer Ryhab | Full Stack Developer | Tunis, Tunisia</title>
+    <meta name="description" content="Contact Elmoncer Ryhab – Full Stack Developer in Tunis, Tunisia. Email: ryhabelmoncerr@gmail.com · Phone: +216 29 418 145 · LinkedIn · GitHub. Available for freelance and contract projects.">
+    <meta name="keywords" content="contact Elmoncer Ryhab, hire developer Tunisia, freelance developer Tunis, Angular Flutter developer contact, hire full stack developer Tunisia">
+    <meta name="author" content="Elmoncer Ryhab">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2D6FAC">
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Elmoncer Ryhab – Portfolio">
+    <meta property="og:title" content="Contact Elmoncer Ryhab – Hire a Full Stack Developer in Tunis">
+    <meta property="og:description" content="Get in touch – email, phone, LinkedIn or GitHub. Available for freelance and contract work in Angular, Flutter and Spring Boot.">
+    <meta property="og:image" content="https://ryhabelmoncer.github.io/img/img-mobile.jpg">
+    <meta property="og:url" content="https://ryhabelmoncer.github.io/contact.html">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact Elmoncer Ryhab – Full Stack Developer">
+    <meta name="twitter:description" content="Available for freelance and contract work – Angular · Flutter · Spring Boot – Tunis.">
+
+    <!-- ===== CANONICAL & HREFLANG ===== -->
+    <link rel="canonical" href="https://ryhabelmoncer.github.io/contact.html">
+    <link rel="alternate" hreflang="en" href="https://ryhabelmoncer.github.io/contact.html">
+    <link rel="alternate" hreflang="fr" href="https://ryhabelmoncer.github.io/contact.html">
+    <link rel="alternate" hreflang="x-default" href="https://ryhabelmoncer.github.io/contact.html">
+
+    <!-- ===== STRUCTURED DATA — ContactPage + LocalBusiness ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact – Elmoncer Ryhab",
+      "url": "https://ryhabelmoncer.github.io/contact.html",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Elmoncer Ryhab",
+        "jobTitle": "Full Stack Developer",
+        "email": "ryhabelmoncerr@gmail.com",
+        "telephone": "+21629418145",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tunis",
+          "addressCountry": "TN"
+        },
+        "sameAs": [
+          "https://github.com/RyhabElmoncer",
+          "https://www.linkedin.com/in/elmoncer-ryhab/"
+        ],
+        "availableForHire": true
+      }
+    }
+    </script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -14,8 +68,23 @@
     
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom theme overrides -->
+    <link href="css/custom.css" rel="stylesheet">
 
     <style>
+        .lang-switcher {
+            position: fixed; bottom: 30px; left: 30px; z-index: 9999;
+            display: flex; border-radius: 24px; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,.18);
+        }
+        .lang-btn {
+            background: #fff; border: none; color: #555;
+            padding: 8px 16px; font-size: 13px; font-weight: 700;
+            cursor: pointer; letter-spacing: .5px; transition: all .25s;
+        }
+        .lang-btn.active { background: #2D6FAC; color: #fff; }
+        .lang-btn:hover:not(.active) { background: #f5f5f5; }
+
         /* General Styles */
         * {
             margin: 0;
@@ -99,7 +168,7 @@
 
         .header ul.icon-menu li.icon-box.active,
         .header ul.icon-menu li.icon-box:hover {
-            background: #ff0077;
+            background: #2D6FAC;
         }
 
         .header ul.icon-menu li.icon-box.active i,
@@ -139,7 +208,7 @@
             padding: 0 25px 0 30px;
             height: 50px;
             font-size: 15px;
-            background: #ff0077;
+            background: #2D6FAC;
         }
 
         .header .icon-box a:hover h2 {
@@ -165,7 +234,7 @@
         }
 
         .title-section h1 span {
-            color: #ff0077;
+            color: #2D6FAC;
         }
 
         .title-bg {
@@ -215,7 +284,7 @@
         }
 
         .contact-info-card:hover {
-            border-color: #ff0077;
+            border-color: #2D6FAC;
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(255, 0, 119, 0.15);
         }
@@ -253,7 +322,7 @@
         .contact-icon {
             width: 50px;
             height: 50px;
-            background: #ff0077;
+            background: #2D6FAC;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -280,7 +349,7 @@
             display: block;
             font-size: 12px;
             text-transform: uppercase;
-            color: #ff0077;
+            color: #2D6FAC;
             font-weight: 600;
             margin-bottom: 5px;
         }
@@ -296,7 +365,7 @@
         }
 
         .contact-details a:hover {
-            color: #ff0077;
+            color: #2D6FAC;
         }
 
         /* Social Links */
@@ -326,7 +395,7 @@
         }
 
         .social-links a:hover {
-            background: #ff0077;
+            background: #2D6FAC;
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(255, 0, 119, 0.3);
         }
@@ -368,8 +437,8 @@
             font-size: 15px;
             font-weight: 600;
             color: #fff;
-            background-color: #ff0077;
-            border: 2px solid #ff0077;
+            background-color: #2D6FAC;
+            border: 2px solid #2D6FAC;
         }
 
         .button:hover {
@@ -384,7 +453,7 @@
         }
 
         .button:hover .button-text {
-            color: #ff0077;
+            color: #2D6FAC;
         }
 
         .button-icon {
@@ -400,7 +469,7 @@
             font-size: 19px;
             color: #ffffff;
             border-radius: 50%;
-            background-color: #ff0077;
+            background-color: #2D6FAC;
         }
 
         /* Contact Form */
@@ -442,7 +511,7 @@
         }
 
         .form-control:focus {
-            border-color: #ff0077;
+            border-color: #2D6FAC;
             box-shadow: 0 0 0 0.2rem rgba(255, 0, 119, 0.1);
         }
 
@@ -452,9 +521,9 @@
         }
 
         .btn-submit {
-            background: #ff0077;
+            background: #2D6FAC;
             color: #fff;
-            border: 2px solid #ff0077;
+            border: 2px solid #2D6FAC;
             padding: 15px 40px;
             border-radius: 30px;
             font-size: 15px;
@@ -467,7 +536,7 @@
 
         .btn-submit:hover {
             background: transparent;
-            color: #ff0077;
+            color: #2D6FAC;
         }
 
         /* Mobile Navigation */
@@ -566,7 +635,7 @@
 
             #menu li.active a span {
                 font-weight: 600;
-                color: #ff0077;
+                color: #2D6FAC;
             }
 
             #menu li a {
@@ -661,6 +730,12 @@
 </head>
 
 <body class="contact light">
+
+<!-- Language Switcher -->
+<div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button>
+    <button class="lang-btn"        data-lang="fr" onclick="switchLang('fr')">FR</button>
+</div>
 
 <!-- Header Starts -->
 <header class="header" id="navbar-collapse-toggle">
@@ -865,6 +940,6 @@
         animateItems();
     });
 </script>
-
+<script src="js/lang.js"></script>
 </body>
 </html>
