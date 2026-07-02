@@ -387,6 +387,75 @@
         /* ===== HIDDEN CARD ===== */
         .project-card.hidden { display: none; }
 
+        /* ===== SCREENSHOTS LIGHTBOX ===== */
+        .gallery-lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 9999;
+            background: rgba(10, 10, 15, 0.94);
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-lightbox.active { display: flex; }
+        .gallery-lightbox-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+        .gallery-lightbox-img {
+            max-width: 90vw;
+            max-height: 82vh;
+            border-radius: 6px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            background: #111;
+        }
+        .gallery-counter {
+            margin-top: 14px;
+            color: #fff;
+            font-size: 14px;
+            opacity: 0.85;
+            letter-spacing: 0.5px;
+        }
+        .gallery-close,
+        .gallery-nav {
+            position: absolute;
+            background: rgba(255,255,255,0.08);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .2s ease, transform .2s ease;
+        }
+        .gallery-close:hover,
+        .gallery-nav:hover { background: rgba(255,255,255,0.2); transform: scale(1.08); }
+        .gallery-close {
+            top: 20px; right: 20px;
+            width: 42px; height: 42px;
+            font-size: 26px;
+            line-height: 1;
+        }
+        .gallery-nav {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px; height: 48px;
+            font-size: 18px;
+        }
+        .gallery-nav:hover { transform: translateY(-50%) scale(1.08); }
+        .gallery-prev { left: 20px; }
+        .gallery-next { right: 20px; }
+        @media (max-width: 600px) {
+            .gallery-close { top: 10px; right: 10px; width: 36px; height: 36px; font-size: 22px; }
+            .gallery-nav { width: 38px; height: 38px; }
+            .gallery-prev { left: 8px; }
+            .gallery-next { right: 8px; }
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             .projects-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
@@ -546,7 +615,7 @@
                 <div class="card-img">
                     <img src="img/projects/image.png" alt="Multi-vendor e-commerce platform Venta" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/image.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -572,7 +641,7 @@
                 <div class="card-img">
                     <img src="img/projects/admin/Franchhhh.png" alt="Admin dashboard Venta" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/admin/Home.png", "img/projects/admin/Franchhhh.png", "img/projects/admin/aceeptpage.png", "img/projects/admin/Ajoutersousadmin.png", "img/projects/admin/ajoutlivreur.png", "img/projects/admin/detailcom.png", "img/projects/admin/formulaireinscrit livreur.png", "img/projects/admin/formulaireinscritparteneurs.png", "img/projects/admin/formulaireinscrit vendeur.png", "img/projects/admin/listeclient.png", "img/projects/admin/listelivreur.png", "img/projects/admin/listesous.png", "img/projects/admin/liste vendeur.png", "img/projects/admin/satvendeur.png", "img/projects/admin/serviceshome.png", "img/projects/admin/statistiqueadmin.png", "img/projects/admin/statliver.png", "img/projects/admin/transactionmontant.png", "img/projects/admin/transaction.png", "img/projects/admin/tva.png", "img/projects/admin/venta.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -597,7 +666,7 @@
                 <div class="card-img">
                     <img src="img/projects/SAV/1.png" alt="After-sales service application" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/SAV/1.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -622,7 +691,7 @@
                 <div class="card-img">
                     <img src="img/projects/imozon/imozon.png" alt="Imozon marketplace" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/imozon/imozon.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -647,7 +716,7 @@
                 <div class="card-img">
                     <img src="img/projects/televora/televora.png" alt="Televora streaming platform" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/televora/televora.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -672,7 +741,7 @@
                 <div class="card-img">
                     <img src="img/projects/livreur/cap.png" alt="Delivery driver mobile app" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/livreur/login.png", "img/projects/livreur/dach.png", "img/projects/livreur/cap.png", "img/projects/livreur/comm.png", "img/projects/livreur/acceptanulCommande.jpg", "img/projects/livreur/deta.png", "img/projects/livreur/statliver.png", "img/projects/livreur/image.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -697,7 +766,7 @@
                 <div class="card-img">
                     <img src="img/projects/zone-asl/zone-asl.png" alt="Zone ASL mobile app" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/zone-asl/zone-asl.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -722,7 +791,7 @@
                 <div class="card-img">
                     <img src="img/projects/caissatn/caissatn.png" alt="Caissatn POS system" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/caissatn/caissatn.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -778,7 +847,7 @@
                 <div class="card-img">
                     <img src="img/projects/E-leranign/home.png" alt="E-learning platform" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/E-leranign/home.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -803,7 +872,7 @@
                 <div class="card-img">
                     <img src="img/projects/cabinet/2.png" alt="Medical clinic management" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/cabinet/1.png", "img/projects/cabinet/2.png", "img/projects/cabinet/3.png", "img/projects/cabinet/4.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -828,7 +897,7 @@
                 <div class="card-img">
                     <img src="img/projects/paramarket/liste.png" alt="ParaMarket e-commerce" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/paramarket/home.png", "img/projects/paramarket/liste.png", "img/projects/paramarket/produit.png", "img/projects/paramarket/panier.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -853,7 +922,7 @@
                 <div class="card-img">
                     <img src="img/projects/salony/specialiste.png" alt="Salony beauty specialist app" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/salony/specialiste.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -879,7 +948,7 @@
                 <div class="card-img">
                     <img src="img/projects/salony/customer.png" alt="Salony customer app" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/salony/customer.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -904,7 +973,7 @@
                 <div class="card-img">
                     <img src="img/projects/bibo/bibo.png" alt="Bibo book reading app" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/bibo/bibo.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -929,7 +998,7 @@
                 <div class="card-img">
                     <img src="img/projects/food/food app.png" alt="Food ordering app" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/food/home1.jpg", "img/projects/food/food app.png", "img/projects/food/food2.png", "img/projects/food/MESA.jpg", "img/projects/food/PROF.jpg", "img/projects/food/CRT.jpg"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -954,7 +1023,7 @@
                 <div class="card-img">
                     <img src="img/projects/QRCode/capQR.png" alt="Restaurant QR menu app" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/QRCode/capQR.png", "img/projects/QRCode/admin.png", "img/projects/QRCode/code.png", "img/projects/QRCode/comm.png", "img/projects/QRCode/ppp.png", "img/projects/QRCode/pro.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -979,7 +1048,7 @@
                 <div class="card-img">
                     <img src="img/projects/Edulink/edu.png" alt="SkillMaster learning platform" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/Edulink/HOME.png", "img/projects/Edulink/edu.png", "img/projects/Edulink/LOGIN.png", "img/projects/Edulink/ENBORDING.png", "img/projects/Edulink/PROFILE.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -1004,7 +1073,7 @@
                 <div class="card-img">
                     <img src="img/projects/mskils/login.png" alt="Edulink student social network" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/mskils/login.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -1029,7 +1098,7 @@
                 <div class="card-img">
                     <img src="img/projects/tradigo/cap.png" alt="TradiGo translation app" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/tradigo/cap.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -1053,7 +1122,7 @@
                 <div class="card-img">
                     <img src="img/projects/chariot/cap2.png" alt="Smart shopping cart IoT" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/chariot/cap2.png", "img/projects/chariot/cap3.png", "img/projects/chariot/AP1.png", "img/projects/chariot/1.jpeg", "img/projects/chariot/3.jpeg", "img/projects/chariot/4.jpeg", "img/projects/chariot/acc.jpeg", "img/projects/chariot/\u00e9.jpeg"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -1078,7 +1147,7 @@
                 <div class="card-img">
                     <img src="img/projects/restau/cap1.png" alt="Restaurant order management" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View"><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/restau/cap1.png", "img/projects/restau/home.jpeg", "img/projects/restau/liste.jpeg", "img/projects/restau/liscp2.png", "img/projects/restau/plats.jpeg", "img/projects/restau/login.jpeg"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
@@ -1101,6 +1170,17 @@
         </div><!-- /grid-supervised -->
     </div>
 </section>
+
+<!-- ===== SCREENSHOTS LIGHTBOX ===== -->
+<div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Project screenshots">
+    <button type="button" class="gallery-close" aria-label="Close">&times;</button>
+    <button type="button" class="gallery-nav gallery-prev" aria-label="Previous screenshot">&#10094;</button>
+    <div class="gallery-lightbox-content">
+        <img class="gallery-lightbox-img" src="" alt="">
+        <div class="gallery-counter"></div>
+    </div>
+    <button type="button" class="gallery-nav gallery-next" aria-label="Next screenshot">&#10095;</button>
+</div>
 
 <!-- Template JS Files -->
 <script src="js/jquery-3.5.0.min.js"></script>
@@ -1173,6 +1253,72 @@
             card.style.transform = 'translateY(24px)';
             card.style.transition = 'opacity .5s ease, transform .5s ease';
             observer.observe(card);
+        });
+    })();
+
+    /* ===== SCREENSHOTS LIGHTBOX ===== */
+    (function () {
+        var lightbox = document.getElementById('galleryLightbox');
+        var imgEl = lightbox.querySelector('.gallery-lightbox-img');
+        var counterEl = lightbox.querySelector('.gallery-counter');
+        var closeBtn = lightbox.querySelector('.gallery-close');
+        var prevBtn = lightbox.querySelector('.gallery-prev');
+        var nextBtn = lightbox.querySelector('.gallery-next');
+        var images = [];
+        var index = 0;
+
+        function render() {
+            imgEl.src = images[index];
+            counterEl.textContent = (index + 1) + ' / ' + images.length;
+            var multi = images.length > 1;
+            prevBtn.style.display = multi ? '' : 'none';
+            nextBtn.style.display = multi ? '' : 'none';
+        }
+
+        function open(gallery, startIndex) {
+            images = gallery;
+            index = startIndex || 0;
+            render();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function close() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function show(delta) {
+            index = (index + delta + images.length) % images.length;
+            render();
+        }
+
+        document.querySelectorAll('.overlay-btn').forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                var raw = btn.getAttribute('data-gallery');
+                if (!raw) return;
+                try {
+                    open(JSON.parse(raw), 0);
+                } catch (err) {
+                    console.error('Invalid gallery data', err);
+                }
+            });
+        });
+
+        closeBtn.addEventListener('click', close);
+        prevBtn.addEventListener('click', function () { show(-1); });
+        nextBtn.addEventListener('click', function () { show(1); });
+
+        lightbox.addEventListener('click', function (e) {
+            if (e.target === lightbox) close();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') close();
+            else if (e.key === 'ArrowLeft') show(-1);
+            else if (e.key === 'ArrowRight') show(1);
         });
     })();
 </script>
