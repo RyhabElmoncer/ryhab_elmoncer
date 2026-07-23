@@ -87,8 +87,10 @@
     </script>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -110,7 +112,7 @@
     <link rel="alternate stylesheet" type="text/css" title="red"        href="css/skins/red.css" />
     <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
-    <script src="js/modernizr.custom.js"></script>
+    <script src="js/modernizr.custom.js" defer></script>
 
     <style>
         /* ===== LANGUAGE SWITCHER ===== */
@@ -615,7 +617,8 @@
                 <div class="card-img">
                     <img src="img/projects/image.png" alt="Multi-vendor e-commerce platform Venta" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/image.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/image.png","img/projects/admin/Home.png","img/projects/admin/Franchhhh.png","img/projects/admin/aceeptpage.png","img/projects/admin/Ajoutersousadmin.png","img/projects/admin/ajoutlivreur.png","img/projects/admin/detailcom.png","img/projects/admin/formulaireinscrit livreur.png","img/projects/admin/formulaireinscritparteneurs.png","img/projects/admin/formulaireinscrit vendeur.png","img/projects/admin/listeclient.png","img/projects/admin/listelivreur.png","img/projects/admin/listesous.png","img/projects/admin/liste vendeur.png","img/projects/admin/satvendeur.png","img/projects/admin/serviceshome.png","img/projects/admin/statistiqueadmin.png","img/projects/admin/statliver.png","img/projects/admin/transactionmontant.png","img/projects/admin/transaction.png","img/projects/admin/tva.png","img/projects/admin/venta.png","img/projects/livreur/login.png","img/projects/livreur/dach.png","img/projects/livreur/cap.png","img/projects/livreur/comm.png","img/projects/livreur/acceptanulCommande.jpg","img/projects/livreur/deta.png","img/projects/livreur/statliver.png","img/projects/livreur/image.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://ventafood.com/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -631,7 +634,35 @@
                         <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-docker">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO-1b: Ventafood Client App (Mobile) -->
+            <div class="project-card" data-type="professional" data-platform="mobile">
+                <div class="card-img">
+                    <img src="img/ventafood/1.webp" alt="Ventafood client mobile app Flutter" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/ventafood/1.webp","img/ventafood/2.webp","img/ventafood/3.webp","img/ventafood/4.webp","img/ventafood/5.webp"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.venta.mobile.delivery&hl=fr&pli=1" class="overlay-btn" title="Google Play" target="_blank" rel="noopener noreferrer"><i class="fa fa-android"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-mob">Mobile</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Ventafood – App Client Flutter">Ventafood – Client App</h3>
+                    <p data-fr="Application mobile client pour la plateforme multi-vendeurs Venta : commande en ligne, suivi de livraison en temps réel et paiement intégré. Disponible sur Google Play.">
+                        Customer mobile app for the Venta multi-vendor platform: online ordering, real-time delivery tracking and integrated payment. Available on Google Play.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-flutter">Flutter</span>
+                        <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-firebase">Firebase</span>
                     </div>
                 </div>
             </div>
@@ -656,6 +687,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">REST API</span>
                     </div>
                 </div>
@@ -681,17 +713,20 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
                         <span class="tech-tag t-default">WebSocket</span>
                     </div>
                 </div>
             </div>
 
-            <!-- PRO-4: Imozon -->
+            <!-- PRO-4a: Imozon Front Office -->
             <div class="project-card" data-type="professional" data-platform="web">
                 <div class="card-img">
-                    <img src="img/projects/imozon/imozon.png" alt="Imozon marketplace" loading="lazy">
+                    <img src="img/imozonFO/1.png" alt="Imozon front office marketplace" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/imozon/imozon.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/imozonFO/1.png","img/imozonFO/2.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://imozon.ca/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -699,14 +734,49 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3>Imozon</h3>
-                    <p data-fr="Marketplace e-commerce avec architecture microservices et système de paiement sécurisé. Réalisé chez MapsIT.">
-                        E-commerce marketplace with microservices architecture and secure payment system. Built at MapsIT.
+                    <h3 data-fr="Imozon – Portail Client">Imozon – Front Office</h3>
+                    <p data-fr="Portail client Angular 19 (Material, Tailwind) pour les locataires : consultation des propriétés/unités/baux/parkings, suivi des réclamations et demandes de maintenance, tableaux de bord financiers et export de documents (PDF/Excel). Interface multilingue via Transloco. Réalisé chez MapsIT.">
+                        Angular 19 (Material, Tailwind) client portal for tenants: property/unit/lease/parking browsing, claims &amp; maintenance tracking, financial dashboards and document export (PDF/Excel). Multilingual UI via Transloco. Built at MapsIT.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag t-angular">Angular</span>
+                        <span class="tech-tag t-angular">Angular 19</span>
+                        <span class="tech-tag t-default">Material</span>
+                        <span class="tech-tag t-default">Tailwind</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
-                        <span class="tech-tag t-default">Microservices</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                        <span class="tech-tag t-default">Transloco</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO-4b: Imozon Back Office -->
+            <div class="project-card" data-type="professional" data-platform="web">
+                <div class="card-img">
+                    <img src="img/imozonbo/2.png" alt="Imozon back office dashboard" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/imozonbo/2.png","img/imozonbo/1.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://backoffice.imozon.ca/dashboard" class="overlay-btn" title="Visit backoffice" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Imozon – Back Office">Imozon – Back Office</h3>
+                    <p data-fr="Application Angular 19 (Material, Tailwind) unifiée pour administrateurs, gestionnaires et propriétaires : gestion complète des propriétés/unités/baux/parkings, tableaux de bord financiers et comptables, graphiques interactifs (ApexCharts), suivi des réclamations et maintenance, export PDF/Excel et interface multilingue (Transloco). Réalisé chez MapsIT.">
+                        Unified Angular 19 (Material, Tailwind) app for admins, managers &amp; owners: full property/unit/lease/parking management, financial &amp; accounting dashboards, interactive charts (ApexCharts), claims &amp; maintenance tracking, PDF/Excel export and multilingual UI (Transloco). Built at MapsIT.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-angular">Angular 19</span>
+                        <span class="tech-tag t-default">Material</span>
+                        <span class="tech-tag t-default">Tailwind</span>
+                        <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                        <span class="tech-tag t-default">ApexCharts</span>
+                        <span class="tech-tag t-default">Transloco</span>
                     </div>
                 </div>
             </div>
@@ -714,9 +784,10 @@
             <!-- PRO-5: Televora -->
             <div class="project-card" data-type="professional" data-platform="web">
                 <div class="card-img">
-                    <img src="img/projects/televora/televora.png" alt="Televora streaming platform" loading="lazy">
+                    <img src="img/projects/televora/televora.png" alt="Televora comparateur forfaits mobile et box internet France" loading="lazy">
                     <div class="card-overlay">
                         <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/televora/televora.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://televora.fr/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -724,14 +795,17 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3>Televora</h3>
-                    <p data-fr="Plateforme de streaming vidéo avec gestion de contenus, abonnements et recommandations. Réalisé chez MapsIT.">
-                        Video streaming platform with content management, subscriptions and recommendations. Built at MapsIT.
+                    <h3>Télévora</h3>
+                    <p data-fr="Comparateur français de forfaits mobiles et box internet (Fibre, ADSL, 4G/5G) en temps réel. Agrège les offres de 15+ opérateurs (Orange, SFR, Free, Bouygues…), test d'éligibilité par adresse, comparaison et filtrage des offres, alertes promotionnelles, actualités télécom et test de débit. Développé chez MapsIT – Paris 75011.">
+                        French real-time comparator for mobile plans &amp; internet boxes (Fibre, ADSL, 4G/5G). Aggregates offers from 15+ operators (Orange, SFR, Free, Bouygues…), address-based eligibility testing, offer filtering, promo alerts, telecom news and speed test. Built at MapsIT – Paris 75011.
                     </p>
                     <div class="tech-stack">
                         <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
-                        <span class="tech-tag t-mongo">MongoDB</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                        <span class="tech-tag t-default">REST API</span>
+                        <span class="tech-tag t-default">Elasticsearch</span>
                     </div>
                 </div>
             </div>
@@ -742,6 +816,7 @@
                     <img src="img/projects/livreur/cap.png" alt="Delivery driver mobile app" loading="lazy">
                     <div class="card-overlay">
                         <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/livreur/login.png", "img/projects/livreur/dach.png", "img/projects/livreur/cap.png", "img/projects/livreur/comm.png", "img/projects/livreur/acceptanulCommande.jpg", "img/projects/livreur/deta.png", "img/projects/livreur/statliver.png", "img/projects/livreur/image.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://apps.apple.com/dz/app/venta-livreur/id6759285998" class="overlay-btn" title="App Store" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -756,32 +831,36 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-firebase">Firebase</span>
                     </div>
                 </div>
             </div>
 
-            <!-- PRO-7: Zone ASL Mobile (Mobile #2) -->
-            <div class="project-card" data-type="professional" data-platform="mobile">
+            <!-- PRO-7: Zone ADSL Eligibility -->
+            <div class="project-card" data-type="professional" data-platform="web">
                 <div class="card-img">
-                    <img src="img/projects/zone-asl/zone-asl.png" alt="Zone ASL mobile app" loading="lazy">
+                    <img src="img/zoneadsl/1.png" alt="Zone ADSL connection eligibility" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/zone-asl/zone-asl.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/zoneadsl/1.png","img/zoneadsl/2.png","img/zoneadsl/3.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
-                        <span class="badge-platform badge-plat-mob">Mobile</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3>Zone ASL – Flutter</h3>
-                    <p data-fr="Application mobile de gestion et suivi de zones géographiques avec notifications en temps réel. Réalisé chez MapsIT.">
-                        Mobile app for managing and tracking geographical zones with real-time notifications. Built at MapsIT.
+                    <h3 data-fr="Zone ADSL – Éligibilité Connexion">Zone ADSL – Connection Eligibility</h3>
+                    <p data-fr="Application web Angular permettant de tester l'éligibilité de connexion (mobile et box) pour des zones en France : vérification DNS, couverture réseau et disponibilité des offres. Back-end Spring Boot avec indexation Elasticsearch. Réalisé chez MapsIT.">
+                        Angular web app for testing connection eligibility (mobile &amp; box) across zones in France: DNS checks, network coverage and offer availability. Spring Boot back-end with Elasticsearch indexing. Built at MapsIT.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag t-flutter">Flutter</span>
-                        <span class="tech-tag t-firebase">Firebase</span>
-                        <span class="tech-tag t-default">Geolocation</span>
+                        <span class="tech-tag t-angular">Angular</span>
+                        <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                        <span class="tech-tag t-default">Elasticsearch</span>
+                        <span class="tech-tag t-default">DNS</span>
                     </div>
                 </div>
             </div>
@@ -806,7 +885,8 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
-                        <span class="tech-tag t-default">MySQL</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
                     </div>
                 </div>
             </div>
@@ -862,6 +942,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">MySQL</span>
                     </div>
                 </div>
@@ -887,6 +968,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">Spring Security</span>
                     </div>
                 </div>
@@ -912,6 +994,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">Elasticsearch</span>
                     </div>
                 </div>
@@ -937,6 +1020,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-mongo">MongoDB</span>
                         <span class="tech-tag t-default">Stripe</span>
                     </div>
@@ -963,6 +1047,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">Google Maps</span>
                     </div>
                 </div>
@@ -1038,6 +1123,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">QR Code</span>
                     </div>
                 </div>
@@ -1063,6 +1149,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">WebSocket</span>
                     </div>
                 </div>
@@ -1088,6 +1175,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">Figma</span>
                     </div>
                 </div>
@@ -1162,6 +1250,7 @@
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">WebSocket</span>
                     </div>
                 </div>
