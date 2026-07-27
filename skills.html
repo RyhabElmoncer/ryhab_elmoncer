@@ -690,6 +690,7 @@
 <div class="lang-switcher">
     <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button>
     <button class="lang-btn"        data-lang="fr" onclick="switchLang('fr')">FR</button>
+    <button class="lang-btn"        data-lang="it" onclick="switchLang('it')">IT</button>
 </div>
 
 <!-- Header Starts -->
@@ -698,15 +699,15 @@
     <ul class="icon-menu d-none d-lg-block">
         <li class="icon-box">
             <i class="fa fa-home"></i>
-            <a href="index.html"><h2 data-fr="Accueil">Home</h2></a>
+            <a href="index.html"><h2 data-fr="Accueil" data-it="Home">Home</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-user"></i>
-            <a href="about.html"><h2 data-fr="À Propos">About</h2></a>
+            <a href="about.html"><h2 data-fr="À Propos" data-it="Chi Sono">About</h2></a>
         </li>
         <li class="icon-box active">
             <i class="fa fa-cogs"></i>
-            <a href="skills.html"><h2 data-fr="Compétences">Skills</h2></a>
+            <a href="skills.html"><h2 data-fr="Compétences" data-it="Competenze">Skills</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-briefcase"></i>
@@ -714,7 +715,7 @@
         </li>
         <li class="icon-box">
             <i class="fa fa-envelope-open"></i>
-            <a href="contact.html"><h2 data-fr="Contact">Contact</h2></a>
+            <a href="contact.html"><h2 data-fr="Contact" data-it="Contatti">Contact</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-comments"></i>
@@ -722,7 +723,7 @@
         </li>
         <li class="icon-box">
             <i class="fa fa-graduation-cap"></i>
-            <a href="certifications.html"><h2 data-fr="Certifications">Certifications</h2></a>
+            <a href="certifications.html"><h2 data-fr="Certifications" data-it="Certificazioni">Certifications</h2></a>
         </li>
     </ul>
 </header>
@@ -733,9 +734,9 @@
         <input type="checkbox" />
         <span></span><span></span><span></span>
         <ul class="list-unstyled" id="menu">
-            <li><a href="index.html"><i class="fa fa-home"></i><span data-fr="Accueil">Home</span></a></li>
-            <li><a href="about.html"><i class="fa fa-user"></i><span data-fr="À Propos">About</span></a></li>
-            <li class="active"><a href="skills.html"><i class="fa fa-cogs"></i><span data-fr="Compétences">Skills</span></a></li>
+            <li><a href="index.html"><i class="fa fa-home"></i><span data-fr="Accueil" data-it="Home">Home</span></a></li>
+            <li><a href="about.html"><i class="fa fa-user"></i><span data-fr="À Propos" data-it="Chi Sono">About</span></a></li>
+            <li class="active"><a href="skills.html"><i class="fa fa-cogs"></i><span data-fr="Compétences" data-it="Competenze">Skills</span></a></li>
             <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
             <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
             <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
@@ -746,8 +747,8 @@
 
 <!-- Page Title -->
 <section class="title-section text-left text-sm-center">
-    <h1 data-fr-html="MES <span>COMPÉTENCES</span>" data-en-html="MY <span>SKILLS</span>">MY <span>SKILLS</span></h1>
-    <span class="title-bg" data-fr="Résumé">Resume</span>
+    <h1 data-fr-html="MES <span>COMPÉTENCES</span>" data-it-html="LE MIE <span>COMPETENZE</span>" data-en-html="MY <span>SKILLS</span>">MY <span>SKILLS</span></h1>
+    <span class="title-bg" data-fr="Résumé" data-it="Curriculum">Resume</span>
 </section>
 
 <!-- Services Section -->
@@ -755,15 +756,15 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600" data-fr="Mes Services">My Services</h3>
+                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600" data-fr="Mes Services" data-it="I Miei Servizi">My Services</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
                     <i class="fa fa-code service-icon"></i>
-                    <h4 class="text-uppercase mt-3" data-fr="Développement Web">Web Development</h4>
-                    <p class="open-sans-font mt-2" data-fr="Applications web Angular 16–19 avec Material Design, SEO optimisé et intégration d'APIs REST sécurisées Spring Boot.">
+                    <h4 class="text-uppercase mt-3" data-fr="Développement Web" data-it="Sviluppo Web">Web Development</h4>
+                    <p class="open-sans-font mt-2" data-fr="Applications web Angular 16–19 avec Material Design, SEO optimisé et intégration d'APIs REST sécurisées Spring Boot." data-it="Applicazioni web Angular 16–19 con Material Design, SEO ottimizzata e integrazione di API REST sicure Spring Boot.">
                         Angular 16–19 web applications with Material Design, optimised SEO, and secured Spring Boot REST API integration.
                     </p>
                 </div>
@@ -771,8 +772,8 @@
             <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
                     <i class="fa fa-mobile service-icon"></i>
-                    <h4 class="text-uppercase mt-3" data-fr="Développement Mobile Flutter">Mobile – Flutter</h4>
-                    <p class="open-sans-font mt-2" data-fr="Applications mobiles cross-platform avec Flutter & Dart : géolocalisation, Firebase, paiement en ligne et notifications push.">
+                    <h4 class="text-uppercase mt-3" data-fr="Développement Mobile Flutter" data-it="Sviluppo Mobile Flutter">Mobile – Flutter</h4>
+                    <p class="open-sans-font mt-2" data-fr="Applications mobiles cross-platform avec Flutter & Dart : géolocalisation, Firebase, paiement en ligne et notifications push." data-it="Applicazioni mobili cross-platform con Flutter & Dart: geolocalizzazione, Firebase, pagamenti online e notifiche push.">
                         Cross-platform mobile apps with Flutter & Dart: geolocation, Firebase, online payment, and push notifications.
                     </p>
                 </div>
@@ -780,8 +781,8 @@
             <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
                     <i class="fa fa-database service-icon"></i>
-                    <h4 class="text-uppercase mt-3" data-fr="Backend & Sécurité API">Backend & API Security</h4>
-                    <p class="open-sans-font mt-2" data-fr="APIs REST Spring Boot avec Spring Security, Keycloak (OAuth2/OIDC), JPA/Hibernate, ElasticSearch et intégrations paiement bancaire.">
+                    <h4 class="text-uppercase mt-3" data-fr="Backend & Sécurité API" data-it="Backend & Sicurezza API">Backend & API Security</h4>
+                    <p class="open-sans-font mt-2" data-fr="APIs REST Spring Boot avec Spring Security, Keycloak (OAuth2/OIDC), JPA/Hibernate, ElasticSearch et intégrations paiement bancaire." data-it="API REST Spring Boot con Spring Security, Keycloak (OAuth2/OIDC), JPA/Hibernate, ElasticSearch e integrazioni di pagamento bancario.">
                         Spring Boot REST APIs secured with Keycloak (OAuth2/OIDC), JPA/Hibernate, ElasticSearch and banking payment integrations.
                     </p>
                 </div>
@@ -789,8 +790,8 @@
             <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="service-box text-center">
                     <i class="fa fa-cogs service-icon"></i>
-                    <h4 class="text-uppercase mt-3" data-fr="DevOps &amp; CI/CD">DevOps &amp; CI/CD</h4>
-                    <p class="open-sans-font mt-2" data-fr="Conteneurisation Docker, pipelines GitLab CI/CD, déploiements OVH, migrations Liquibase et pratiques DevSecOps.">
+                    <h4 class="text-uppercase mt-3" data-fr="DevOps &amp; CI/CD" data-it="DevOps &amp; CI/CD">DevOps &amp; CI/CD</h4>
+                    <p class="open-sans-font mt-2" data-fr="Conteneurisation Docker, pipelines GitLab CI/CD, déploiements OVH, migrations Liquibase et pratiques DevSecOps." data-it="Containerizzazione Docker, pipeline GitLab CI/CD, deployment OVH, migrazioni Liquibase e pratiche DevSecOps.">
                         Docker containerisation, GitLab CI/CD pipelines, OVH deployments, Liquibase migrations and DevSecOps practices.
                     </p>
                 </div>
@@ -828,13 +829,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600" data-fr="Compétences Techniques">Technical Skills</h3>
+                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600" data-fr="Compétences Techniques" data-it="Competenze Tecniche">Technical Skills</h3>
             </div>
         </div>
         
         <!-- Frontend -->
         <div class="skill-category">
-            <h4 class="poppins-font" data-fr-html="<i class='fa fa-code'></i> Frontend" data-en-html="<i class='fa fa-code'></i> Frontend"><i class="fa fa-code"></i> Frontend</h4>
+            <h4 class="poppins-font" data-fr-html="<i class='fa fa-code'></i> Frontend" data-it-html="<i class='fa fa-code'></i> Frontend" data-en-html="<i class='fa fa-code'></i> Frontend"><i class="fa fa-code"></i> Frontend</h4>
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="skill-item">
@@ -859,7 +860,7 @@
 
         <!-- Backend -->
         <div class="skill-category">
-            <h4 class="poppins-font" data-fr-html="<i class='fa fa-server'></i> Backend" data-en-html="<i class='fa fa-server'></i> Backend"><i class="fa fa-server"></i> Backend</h4>
+            <h4 class="poppins-font" data-fr-html="<i class='fa fa-server'></i> Backend" data-it-html="<i class='fa fa-server'></i> Backend" data-en-html="<i class='fa fa-server'></i> Backend"><i class="fa fa-server"></i> Backend</h4>
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="skill-item">
@@ -884,7 +885,7 @@
 
         <!-- Databases -->
         <div class="skill-category">
-            <h4 class="poppins-font" data-fr-html="<i class='fa fa-database'></i> Bases de données" data-en-html="<i class='fa fa-database'></i> Databases"><i class="fa fa-database"></i> Databases</h4>
+            <h4 class="poppins-font" data-fr-html="<i class='fa fa-database'></i> Bases de données" data-it-html="<i class='fa fa-database'></i> Database" data-en-html="<i class='fa fa-database'></i> Databases"><i class="fa fa-database"></i> Databases</h4>
             <div class="row">
                 <div class="col-12 col-md-4">
                     <div class="skill-item">
@@ -909,7 +910,7 @@
 
         <!-- DevOps -->
         <div class="skill-category">
-            <h4 class="poppins-font" data-fr-html="<i class='fa fa-cloud'></i> DevOps" data-en-html="<i class='fa fa-cloud'></i> DevOps"><i class="fa fa-cloud"></i> DevOps</h4>
+            <h4 class="poppins-font" data-fr-html="<i class='fa fa-cloud'></i> DevOps" data-it-html="<i class='fa fa-cloud'></i> DevOps" data-en-html="<i class='fa fa-cloud'></i> DevOps"><i class="fa fa-cloud"></i> DevOps</h4>
             <div class="skill-tags">
                 <span class="skill-tag">Docker</span>
                 <span class="skill-tag">GitLab CI/CD</span>
@@ -922,7 +923,7 @@
 
         <!-- Tools & Methods -->
         <div class="skill-category">
-            <h4 class="poppins-font" data-fr-html="<i class='fa fa-wrench'></i> Outils &amp; Méthodes" data-en-html="<i class='fa fa-wrench'></i> Tools &amp; Methods"><i class="fa fa-wrench"></i> Tools &amp; Methods</h4>
+            <h4 class="poppins-font" data-fr-html="<i class='fa fa-wrench'></i> Outils &amp; Méthodes" data-it-html="<i class='fa fa-wrench'></i> Strumenti &amp; Metodi" data-en-html="<i class='fa fa-wrench'></i> Tools &amp; Methods"><i class="fa fa-wrench"></i> Tools &amp; Methods</h4>
             <div class="skill-tags">
                 <span class="skill-tag">JUnit</span>
                 <span class="skill-tag">Jest</span>
@@ -942,7 +943,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600" data-fr="Compétences Humaines">Interpersonal Skills</h3>
+                <h3 class="text-uppercase pb-4 mb-4 text-center custom-title ft-wt-600" data-fr="Compétences Humaines" data-it="Competenze Trasversali">Interpersonal Skills</h3>
             </div>
         </div>
         <div class="row">
@@ -990,14 +991,14 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h3 class="poppins-font mb-4" style="color: #666; font-weight: 600;"
-                    data-fr="Prêt à collaborer ?">Ready to Work Together?</h3>
+                    data-fr="Prêt à collaborer ?" data-it="Pronta a collaborare?">Ready to Work Together?</h3>
                 <p class="open-sans-font mb-4" style="font-size: 16px; color: #666;"
-                   data-fr="Collaborons et construisons quelque chose d'extraordinaire. Je suis disponible pour des projets courts ou longs.">
+                   data-fr="Collaborons et construisons quelque chose d'extraordinaire. Je suis disponible pour des projets courts ou longs." data-it="Collaboriamo e costruiamo qualcosa di straordinario. Sono disponibile per progetti brevi o lunghi.">
                     Let's collaborate and build something amazing together. I'm available for both short-term and long-term projects.
                 </p>
                 <a href="contact.html" class="btn btn-custom">
                     <i class="fa fa-envelope"></i>
-                    <span data-fr="Me Contacter">Get In Touch</span>
+                    <span data-fr="Me Contacter" data-it="Contattami">Get In Touch</span>
                 </a>
             </div>
         </div>

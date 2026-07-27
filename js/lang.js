@@ -1,15 +1,17 @@
-/* Language switcher — English default, French toggle */
+/* Language switcher — English default, French / Italian toggle */
 (function () {
     function applyLang(lang) {
         document.documentElement.lang = lang;
 
         document.querySelectorAll('[data-fr]').forEach(function (el) {
-            var txt = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
+            var txt = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-' + lang);
+            if (txt === null) txt = el.getAttribute('data-en');
             if (txt !== null) el.textContent = txt;
         });
 
         document.querySelectorAll('[data-fr-html]').forEach(function (el) {
-            var html = lang === 'fr' ? el.getAttribute('data-fr-html') : el.getAttribute('data-en-html');
+            var html = lang === 'en' ? el.getAttribute('data-en-html') : el.getAttribute('data-' + lang + '-html');
+            if (html === null) html = el.getAttribute('data-en-html');
             if (html !== null) el.innerHTML = html;
         });
 
