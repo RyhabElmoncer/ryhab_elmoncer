@@ -58,7 +58,7 @@
       "mainEntity": {
         "@type": "ItemList",
         "name": "Projects",
-        "numberOfItems": 21,
+        "numberOfItems": 22,
         "itemListElement": [
           {"@type": "ListItem","position": 1,"name": "Multi-Vendor E-commerce Platform (Angular, Flutter, Spring Boot)"},
           {"@type": "ListItem","position": 2,"name": "Admin Dashboard Venta (Angular, Spring Boot)"},
@@ -67,7 +67,7 @@
           {"@type": "ListItem","position": 5,"name": "Televora Streaming Platform (Angular, Spring Boot, MongoDB)"},
           {"@type": "ListItem","position": 6,"name": "Delivery Driver App – Flutter (Flutter, Spring Boot, Firebase)"},
           {"@type": "ListItem","position": 7,"name": "Zone ASL Mobile (Flutter, Firebase)"},
-          {"@type": "ListItem","position": 8,"name": "Caissatn POS System (Flutter, Spring Boot)"},
+          {"@type": "ListItem","position": 8,"name": "Caissatn POS System (Angular, Spring Boot, Keycloak)"},
           {"@type": "ListItem","position": 9,"name": "E-Learning Platform (Angular, Spring Boot) – PFE"},
           {"@type": "ListItem","position": 10,"name": "Medical Clinic System (Angular, Spring Boot) – PFE"},
           {"@type": "ListItem","position": 11,"name": "ParaMarket (Angular, Spring Boot, Elasticsearch) – PFE"},
@@ -80,7 +80,8 @@
           {"@type": "ListItem","position": 18,"name": "Edulink Student Network (Flutter, Spring Boot) – PFE"},
           {"@type": "ListItem","position": 19,"name": "TradiGo Translation App (Flutter, Google API) – PFE"},
           {"@type": "ListItem","position": 20,"name": "Smart Cart IoT (Flutter, Firebase) – PFE"},
-          {"@type": "ListItem","position": 21,"name": "Restaurant Order Management (Flutter, Spring Boot) – PFE"}
+          {"@type": "ListItem","position": 21,"name": "Restaurant Order Management (Flutter, Spring Boot) – PFE"},
+          {"@type": "ListItem","position": 22,"name": "Orca – RCA Mode Clothing E-commerce (Angular, Spring Boot)"}
         ]
       }
     }
@@ -865,8 +866,8 @@
                 </div>
             </div>
 
-            <!-- PRO-8: Caissatn (Mobile POS) -->
-            <div class="project-card" data-type="professional" data-platform="mobile">
+            <!-- PRO-8: Caissatn (Web POS) -->
+            <div class="project-card" data-type="professional" data-platform="web">
                 <div class="card-img">
                     <img src="img/Caissatn/1.png" alt="Caissatn POS system" loading="lazy">
                     <div class="card-overlay">
@@ -874,17 +875,18 @@
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
-                        <span class="badge-platform badge-plat-mob">Mobile</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
                     <h3>Caissatn – POS</h3>
-                    <p data-fr="Système de point de vente complet avec gestion d'inventaire et reporting avancé. Réalisé chez MapsIT.">
-                        Complete point-of-sale system with inventory management and advanced reporting. Built at MapsIT.
+                    <p data-fr="Application web de point de vente (POS) multi-tenant avec gestion d'inventaire et reporting avancé. Authentification et gestion des accès via Keycloak. Réalisé chez MapsIT.">
+                        Multi-tenant point-of-sale (POS) web application with inventory management and advanced reporting. Authentication and access management via Keycloak. Built at MapsIT.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag t-flutter">Flutter</span>
+                        <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Keycloak</span>
                         <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">PostgreSQL</span>
                     </div>
