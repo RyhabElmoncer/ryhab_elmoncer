@@ -1727,9 +1727,9 @@
 
         document.querySelectorAll('.overlay-btn').forEach(function (btn) {
             btn.addEventListener('click', function (e) {
-                e.preventDefault();
                 var raw = btn.getAttribute('data-gallery');
                 if (!raw) return;
+                e.preventDefault();
                 try {
                     open(JSON.parse(raw), 0);
                 } catch (err) {
