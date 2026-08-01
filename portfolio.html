@@ -58,29 +58,42 @@
       "mainEntity": {
         "@type": "ItemList",
         "name": "Projects",
-        "numberOfItems": 21,
+        "numberOfItems": 34,
         "itemListElement": [
           {"@type": "ListItem","position": 1,"name": "Multi-Vendor E-commerce Platform (Angular, Flutter, Spring Boot)"},
           {"@type": "ListItem","position": 2,"name": "Admin Dashboard Venta (Angular, Spring Boot)"},
-          {"@type": "ListItem","position": 3,"name": "After-Sales Service App (Angular, Spring Boot, WebSocket)"},
+          {"@type": "ListItem","position": 3,"name": "After-Sales Service App (Angular, Spring Boot, WebSocket) – PFE"},
           {"@type": "ListItem","position": 4,"name": "Imozon Marketplace (Angular, Spring Boot, Microservices)"},
           {"@type": "ListItem","position": 5,"name": "Televora Streaming Platform (Angular, Spring Boot, MongoDB)"},
           {"@type": "ListItem","position": 6,"name": "Delivery Driver App – Flutter (Flutter, Spring Boot, Firebase)"},
           {"@type": "ListItem","position": 7,"name": "Zone ASL Mobile (Flutter, Firebase)"},
-          {"@type": "ListItem","position": 8,"name": "Caissatn POS System (Flutter, Spring Boot)"},
+          {"@type": "ListItem","position": 8,"name": "Caissatn POS System (Angular, Spring Boot, Keycloak)"},
           {"@type": "ListItem","position": 9,"name": "E-Learning Platform (Angular, Spring Boot) – PFE"},
           {"@type": "ListItem","position": 10,"name": "Medical Clinic System (Angular, Spring Boot) – PFE"},
           {"@type": "ListItem","position": 11,"name": "ParaMarket (Angular, Spring Boot, Elasticsearch) – PFE"},
-          {"@type": "ListItem","position": 12,"name": "Salony Specialist App – Flutter (Flutter, Spring Boot) – PFE"},
-          {"@type": "ListItem","position": 13,"name": "Salony Client App – Flutter (Flutter, Spring Boot) – PFE"},
-          {"@type": "ListItem","position": 14,"name": "Bibo Digital Reading App – Flutter (Flutter, Firebase) – PFE"},
+          {"@type": "ListItem","position": 12,"name": "Salony Specialist App – Flutter (Flutter, Spring Boot)"},
+          {"@type": "ListItem","position": 13,"name": "Salony Client App – Flutter (Flutter, Spring Boot)"},
+          {"@type": "ListItem","position": 14,"name": "BiBoo Childcare Ecosystem (Flutter, Firebase, Angular)"},
           {"@type": "ListItem","position": 15,"name": "FOOD-APP (Flutter, Firebase) – PFE"},
           {"@type": "ListItem","position": 16,"name": "Restaurant QR Menu (Flutter, Spring Boot) – PFE"},
           {"@type": "ListItem","position": 17,"name": "SkillMaster Learning Platform (Flutter, Spring Boot) – PFE"},
           {"@type": "ListItem","position": 18,"name": "Edulink Student Network (Flutter, Spring Boot) – PFE"},
           {"@type": "ListItem","position": 19,"name": "TradiGo Translation App (Flutter, Google API) – PFE"},
           {"@type": "ListItem","position": 20,"name": "Smart Cart IoT (Flutter, Firebase) – PFE"},
-          {"@type": "ListItem","position": 21,"name": "Restaurant Order Management (Flutter, Spring Boot) – PFE"}
+          {"@type": "ListItem","position": 21,"name": "Restaurant Order Management (Flutter, Spring Boot) – PFE"},
+          {"@type": "ListItem","position": 22,"name": "Orca – RCA Mode Clothing E-commerce (Angular, Spring Boot)"},
+          {"@type": "ListItem","position": 23,"name": "Al-Amine Food Price Tracking (Flutter, Angular, Spring Boot)"},
+          {"@type": "ListItem","position": 24,"name": "C2A-Vente (JavaScript) – PFE"},
+          {"@type": "ListItem","position": 25,"name": "HotelPro – Hotel Management (JavaScript) – PFE"},
+          {"@type": "ListItem","position": 26,"name": "Workly – Job Search Platform (TypeScript) – PFE"},
+          {"@type": "ListItem","position": 27,"name": "STEG Energy AI System (Python) – PFE"},
+          {"@type": "ListItem","position": 28,"name": "Aziin Hotel (TypeScript) – PFE"},
+          {"@type": "ListItem","position": 29,"name": "LogiTrack – Supply Chain Optimization (JavaScript) – PFE"},
+          {"@type": "ListItem","position": 30,"name": "Sebn PFE (JavaScript) – PFE"},
+          {"@type": "ListItem","position": 31,"name": "SotuLoad3D (JavaScript) – PFE"},
+          {"@type": "ListItem","position": 32,"name": "Bike Rental App – Mini Project (Flutter, Dart) – PFE"},
+          {"@type": "ListItem","position": 33,"name": "E-Learning Chiheb – PFE"},
+          {"@type": "ListItem","position": 34,"name": "Tunitalia Express Freight Logistics (Angular, Spring Boot)"}
         ]
       }
     }
@@ -480,6 +493,7 @@
 <div class="lang-switcher" role="navigation" aria-label="Language switcher">
     <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button>
     <button class="lang-btn"        data-lang="fr" onclick="switchLang('fr')">FR</button>
+    <button class="lang-btn"        data-lang="it" onclick="switchLang('it')">IT</button>
 </div>
 
 <!-- ===== DESKTOP NAV ===== -->
@@ -487,15 +501,15 @@
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
         <li class="icon-box">
             <i class="fa fa-home"></i>
-            <a href="index.html"><h2 data-fr="Accueil">Home</h2></a>
+            <a href="index.html"><h2 data-fr="Accueil" data-it="Home">Home</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-user"></i>
-            <a href="about.html"><h2 data-fr="À Propos">About</h2></a>
+            <a href="about.html"><h2 data-fr="À Propos" data-it="Chi Sono">About</h2></a>
         </li>
         <li class="icon-box">
             <i class="fa fa-cogs"></i>
-            <a href="skills.html"><h2 data-fr="Compétences">Skills</h2></a>
+            <a href="skills.html"><h2 data-fr="Compétences" data-it="Competenze">Skills</h2></a>
         </li>
         <li class="icon-box active">
             <i class="fa fa-briefcase"></i>
@@ -511,7 +525,7 @@
         </li>
         <li class="icon-box">
             <i class="fa fa-graduation-cap"></i>
-            <a href="certifications.html"><h2 data-fr="Certifications">Certifications</h2></a>
+            <a href="certifications.html"><h2 data-fr="Certifications" data-it="Certificazioni">Certifications</h2></a>
         </li>
     </ul>
 
@@ -521,9 +535,9 @@
             <input type="checkbox" aria-label="Toggle menu" />
             <span></span><span></span><span></span>
             <ul class="list-unstyled" id="menu">
-                <li><a href="index.html"><i class="fa fa-home"></i><span data-fr="Accueil">Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span data-fr="À Propos">About</span></a></li>
-                <li><a href="skills.html"><i class="fa fa-cogs"></i><span data-fr="Compétences">Skills</span></a></li>
+                <li><a href="index.html"><i class="fa fa-home"></i><span data-fr="Accueil" data-it="Home">Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span data-fr="À Propos" data-it="Chi Sono">About</span></a></li>
+                <li><a href="skills.html"><i class="fa fa-cogs"></i><span data-fr="Compétences" data-it="Competenze">Skills</span></a></li>
                 <li class="active"><a href="portfolio.html"><i class="fa fa-briefcase"></i><span>Portfolio</span></a></li>
                 <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
                 <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
@@ -535,8 +549,8 @@
 
 <!-- ===== PAGE TITLE ===== -->
 <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1 data-fr-html="Mon <span>Portfolio</span>" data-en-html="My <span>Portfolio</span>">My <span>Portfolio</span></h1>
-    <span class="title-bg" data-fr="Travaux">Works</span>
+    <h1 data-fr-html="Mon <span>Portfolio</span>" data-it-html="Il Mio <span>Portfolio</span>" data-en-html="My <span>Portfolio</span>">My <span>Portfolio</span></h1>
+    <span class="title-bg" data-fr="Travaux" data-it="Lavori">Works</span>
 </section>
 
 <!-- ===== STATS BAR ===== -->
@@ -544,23 +558,23 @@
     <div class="container">
         <div class="d-flex justify-content-center flex-wrap">
             <div class="stat-item">
-                <div class="stat-number">8+</div>
-                <div class="stat-label" data-fr="Projets Pro">Pro Projects</div>
+                <div class="stat-number">15+</div>
+                <div class="stat-label" data-fr="Projets Pro" data-it="Progetti Pro">Pro Projects</div>
             </div>
             <div class="stat-divider d-none d-md-block"></div>
             <div class="stat-item">
-                <div class="stat-number">13+</div>
-                <div class="stat-label" data-fr="Projets PFE">PFE Supervised</div>
+                <div class="stat-number">21+</div>
+                <div class="stat-label" data-fr="Projets PFE" data-it="Progetti di Tesi">PFE Supervised</div>
             </div>
             <div class="stat-divider d-none d-md-block"></div>
             <div class="stat-item">
                 <div class="stat-number">10+</div>
-                <div class="stat-label" data-fr="Technologies">Technologies</div>
+                <div class="stat-label" data-fr="Technologies" data-it="Tecnologie">Technologies</div>
             </div>
             <div class="stat-divider d-none d-md-block"></div>
             <div class="stat-item">
                 <div class="stat-number">2+</div>
-                <div class="stat-label" data-fr="Années d'expérience">Years Experience</div>
+                <div class="stat-label" data-fr="Années d'expérience" data-it="Anni di esperienza">Years Experience</div>
             </div>
         </div>
     </div>
@@ -570,15 +584,15 @@
 <div class="filter-section">
     <button class="filter-btn active" data-filter="all">
         <i class="fa fa-th btn-icon"></i>
-        <span data-fr="Tous">All</span>
+        <span data-fr="Tous" data-it="Tutti">All</span>
     </button>
     <button class="filter-btn" data-filter="professional">
         <i class="fa fa-building btn-icon"></i>
-        <span data-fr="Professionnel">Professional</span>
+        <span data-fr="Professionnel" data-it="Professionale">Professional</span>
     </button>
     <button class="filter-btn" data-filter="supervised">
         <i class="fa fa-graduation-cap btn-icon"></i>
-        <span data-fr="Encadrement PFE">Supervised PFE</span>
+        <span data-fr="Encadrement PFE" data-it="Supervisione Tesi">Supervised PFE</span>
     </button>
     <button class="filter-btn" data-filter="web">
         <i class="fa fa-globe btn-icon"></i>
@@ -598,10 +612,10 @@
         <div class="section-header">
             <span class="section-badge badge-pro">
                 <i class="fa fa-building"></i>&nbsp;
-                <span data-fr="Projets Professionnels">Professional Projects</span>
+                <span data-fr="Projets Professionnels" data-it="Progetti Professionali">Professional Projects</span>
             </span>
-            <h2 data-fr-html="Réalisés en <span>Entreprise</span>" data-en-html="Realized in <span>Companies</span>">Realized in <span>Companies</span></h2>
-            <p data-fr="Applications web et mobiles développées au sein de sociétés professionnelles">
+            <h2 data-fr-html="Réalisés en <span>Entreprise</span>" data-it-html="Realizzati in <span>Azienda</span>" data-en-html="Realized in <span>Companies</span>">Realized in <span>Companies</span></h2>
+            <p data-fr="Applications web et mobiles développées au sein de sociétés professionnelles" data-it="Applicazioni web e mobile sviluppate presso aziende professionali">
                 Web &amp; mobile applications developed within professional companies
             </p>
             <div class="companies-list">
@@ -617,19 +631,19 @@
             <!-- PRO-1: Multi-vendor platform -->
             <div class="project-card" data-type="professional" data-platform="web">
                 <div class="card-img">
-                    <img src="img/projects/image.png" alt="Multi-vendor e-commerce platform Venta" loading="lazy">
+                    <img src="img/projects/admin/Home.png" alt="Multi-vendor e-commerce platform Venta" loading="lazy">
                     <div class="card-overlay">
                         <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/image.png","img/projects/admin/Home.png","img/projects/admin/Franchhhh.png","img/projects/admin/aceeptpage.png","img/projects/admin/Ajoutersousadmin.png","img/projects/admin/ajoutlivreur.png","img/projects/admin/detailcom.png","img/projects/admin/formulaireinscrit livreur.png","img/projects/admin/formulaireinscritparteneurs.png","img/projects/admin/formulaireinscrit vendeur.png","img/projects/admin/listeclient.png","img/projects/admin/listelivreur.png","img/projects/admin/listesous.png","img/projects/admin/liste vendeur.png","img/projects/admin/satvendeur.png","img/projects/admin/serviceshome.png","img/projects/admin/statistiqueadmin.png","img/projects/admin/statliver.png","img/projects/admin/transactionmontant.png","img/projects/admin/transaction.png","img/projects/admin/tva.png","img/projects/admin/venta.png","img/projects/livreur/login.png","img/projects/livreur/dach.png","img/projects/livreur/cap.png","img/projects/livreur/comm.png","img/projects/livreur/acceptanulCommande.jpg","img/projects/livreur/deta.png","img/projects/livreur/statliver.png","img/projects/livreur/image.png"]'><i class="fa fa-eye"></i></a>
                         <a href="https://ventafood.com/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                     </div>
                     <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
                         <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Plateforme Multi-Vendeurs">Multi-Vendor Platform</h3>
-                    <p data-fr="Solution e-commerce complète avec gestion multi-vendeurs, paiement en ligne et système de livraison intégré. Réalisé chez CYBERAX.">
+                    <h3 data-fr="Plateforme Multi-Vendeurs" data-it="Piattaforma Multi-Vendor">Multi-Vendor Platform</h3>
+                    <p data-fr="Solution e-commerce complète avec gestion multi-vendeurs, paiement en ligne et système de livraison intégré. Réalisé chez CYBERAX." data-it="Soluzione e-commerce completa con gestione multi-vendor, pagamento online e sistema di consegna integrato. Realizzato presso CYBERAX.">
                         Full e-commerce solution with multi-vendor management, online payment and integrated delivery system. Built at CYBERAX.
                     </p>
                     <div class="tech-stack">
@@ -651,13 +665,13 @@
                         <a href="https://play.google.com/store/apps/details?id=com.venta.mobile.delivery&hl=fr&pli=1" class="overlay-btn" title="Google Play" target="_blank" rel="noopener noreferrer"><i class="fa fa-android"></i></a>
                     </div>
                     <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
                         <span class="badge-platform badge-plat-mob">Mobile</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Ventafood – App Client Flutter">Ventafood – Client App</h3>
-                    <p data-fr="Application mobile client pour la plateforme multi-vendeurs Venta : commande en ligne, suivi de livraison en temps réel et paiement intégré. Disponible sur Google Play.">
+                    <h3 data-fr="Ventafood – App Client Flutter" data-it="Ventafood – App Cliente Flutter">Ventafood – Client App</h3>
+                    <p data-fr="Application mobile client pour la plateforme multi-vendeurs Venta : commande en ligne, suivi de livraison en temps réel et paiement intégré. Disponible sur Google Play." data-it="App mobile cliente per la piattaforma multi-vendor Venta: ordini online, tracciamento della consegna in tempo reale e pagamento integrato. Disponibile su Google Play.">
                         Customer mobile app for the Venta multi-vendor platform: online ordering, real-time delivery tracking and integrated payment. Available on Google Play.
                     </p>
                     <div class="tech-stack">
@@ -677,13 +691,13 @@
                         <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/admin/Home.png", "img/projects/admin/Franchhhh.png", "img/projects/admin/aceeptpage.png", "img/projects/admin/Ajoutersousadmin.png", "img/projects/admin/ajoutlivreur.png", "img/projects/admin/detailcom.png", "img/projects/admin/formulaireinscrit livreur.png", "img/projects/admin/formulaireinscritparteneurs.png", "img/projects/admin/formulaireinscrit vendeur.png", "img/projects/admin/listeclient.png", "img/projects/admin/listelivreur.png", "img/projects/admin/listesous.png", "img/projects/admin/liste vendeur.png", "img/projects/admin/satvendeur.png", "img/projects/admin/serviceshome.png", "img/projects/admin/statistiqueadmin.png", "img/projects/admin/statliver.png", "img/projects/admin/transactionmontant.png", "img/projects/admin/transaction.png", "img/projects/admin/tva.png", "img/projects/admin/venta.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
                         <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Espace Administrateur">Admin Dashboard</h3>
-                    <p data-fr="Dashboard complet pour la gestion des utilisateurs, produits, commandes et statistiques de vente. Réalisé chez CYBERAX.">
+                    <h3 data-fr="Espace Administrateur" data-it="Area Amministratore">Admin Dashboard</h3>
+                    <p data-fr="Dashboard complet pour la gestion des utilisateurs, produits, commandes et statistiques de vente. Réalisé chez CYBERAX." data-it="Dashboard completa per la gestione di utenti, prodotti, ordini e statistiche di vendita. Realizzato presso CYBERAX.">
                         Complete dashboard for managing users, products, orders and sales analytics. Built at CYBERAX.
                     </p>
                     <div class="tech-stack">
@@ -691,33 +705,6 @@
                         <span class="tech-tag t-spring">Spring Boot</span>
                         <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">REST API</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PRO-3: SAV -->
-            <div class="project-card" data-type="professional" data-platform="web">
-                <div class="card-img">
-                    <img src="img/projects/SAV/1.png" alt="After-sales service application" loading="lazy">
-                    <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/SAV/1.png"]'><i class="fa fa-eye"></i></a>
-                    </div>
-                    <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
-                        <span class="badge-platform badge-plat-web">Web</span>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h3 data-fr="Application SAV">After-Sales Service App</h3>
-                    <p data-fr="Plateforme de gestion des réclamations et du service après-vente avec suivi en temps réel. Réalisé chez MapsIT.">
-                        Claims and after-sales management platform with real-time tracking. Built at MapsIT.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag t-angular">Angular</span>
-                        <span class="tech-tag t-spring">Spring Boot</span>
-                        <span class="tech-tag t-default">Liquibase</span>
-                        <span class="tech-tag t-default">PostgreSQL</span>
-                        <span class="tech-tag t-default">WebSocket</span>
                     </div>
                 </div>
             </div>
@@ -731,13 +718,13 @@
                         <a href="https://imozon.ca/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                     </div>
                     <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
                         <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Imozon – Portail Client">Imozon – Front Office</h3>
-                    <p data-fr="Portail client Angular 19 (Material, Tailwind) pour les locataires : consultation des propriétés/unités/baux/parkings, suivi des réclamations et demandes de maintenance, tableaux de bord financiers et export de documents (PDF/Excel). Interface multilingue via Transloco. Réalisé chez MapsIT.">
+                    <h3 data-fr="Imozon – Portail Client" data-it="Imozon – Portale Cliente">Imozon – Front Office</h3>
+                    <p data-fr="Portail client Angular 19 (Material, Tailwind) pour les locataires : consultation des propriétés/unités/baux/parkings, suivi des réclamations et demandes de maintenance, tableaux de bord financiers et export de documents (PDF/Excel). Interface multilingue via Transloco. Réalisé chez MapsIT." data-it="Portale cliente Angular 19 (Material, Tailwind) per gli inquilini: consultazione di proprietà/unità/contratti/parcheggi, gestione reclami e richieste di manutenzione, dashboard finanziarie ed esportazione documenti (PDF/Excel). Interfaccia multilingue tramite Transloco. Realizzato presso MapsIT.">
                         Angular 19 (Material, Tailwind) client portal for tenants: property/unit/lease/parking browsing, claims &amp; maintenance tracking, financial dashboards and document export (PDF/Excel). Multilingual UI via Transloco. Built at MapsIT.
                     </p>
                     <div class="tech-stack">
@@ -761,13 +748,13 @@
                         <a href="https://backoffice.imozon.ca/dashboard" class="overlay-btn" title="Visit backoffice" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                     </div>
                     <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
                         <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Imozon – Back Office">Imozon – Back Office</h3>
-                    <p data-fr="Application Angular 19 (Material, Tailwind) unifiée pour administrateurs, gestionnaires et propriétaires : gestion complète des propriétés/unités/baux/parkings, tableaux de bord financiers et comptables, graphiques interactifs (ApexCharts), suivi des réclamations et maintenance, export PDF/Excel et interface multilingue (Transloco). Réalisé chez MapsIT.">
+                    <h3 data-fr="Imozon – Back Office" data-it="Imozon – Back Office">Imozon – Back Office</h3>
+                    <p data-fr="Application Angular 19 (Material, Tailwind) unifiée pour administrateurs, gestionnaires et propriétaires : gestion complète des propriétés/unités/baux/parkings, tableaux de bord financiers et comptables, graphiques interactifs (ApexCharts), suivi des réclamations et maintenance, export PDF/Excel et interface multilingue (Transloco). Réalisé chez MapsIT." data-it="Applicazione Angular 19 (Material, Tailwind) unificata per amministratori, gestori e proprietari: gestione completa di proprietà/unità/contratti/parcheggi, dashboard finanziarie e contabili, grafici interattivi (ApexCharts), gestione reclami e manutenzione, esportazione PDF/Excel e interfaccia multilingue (Transloco). Realizzato presso MapsIT.">
                         Unified Angular 19 (Material, Tailwind) app for admins, managers &amp; owners: full property/unit/lease/parking management, financial &amp; accounting dashboards, interactive charts (ApexCharts), claims &amp; maintenance tracking, PDF/Excel export and multilingual UI (Transloco). Built at MapsIT.
                     </p>
                     <div class="tech-stack">
@@ -786,19 +773,19 @@
             <!-- PRO-5: Televora -->
             <div class="project-card" data-type="professional" data-platform="web">
                 <div class="card-img">
-                    <img src="img/projects/televora/televora.png" alt="Televora comparateur forfaits mobile et box internet France" loading="lazy">
+                    <img src="img/televora/1.png" alt="Televora comparateur forfaits mobile et box internet France" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/televora/televora.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/televora/1.png", "img/televora/2.png", "img/televora/3.png", "img/televora/4.png", "img/televora/5.png"]'><i class="fa fa-eye"></i></a>
                         <a href="https://televora.fr/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                     </div>
                     <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
                         <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
                     <h3>Télévora</h3>
-                    <p data-fr="Comparateur français de forfaits mobiles et box internet (Fibre, ADSL, 4G/5G) en temps réel. Agrège les offres de 15+ opérateurs (Orange, SFR, Free, Bouygues…), test d'éligibilité par adresse, comparaison et filtrage des offres, alertes promotionnelles, actualités télécom et test de débit. Développé chez MapsIT – Paris 75011.">
+                    <p data-fr="Comparateur français de forfaits mobiles et box internet (Fibre, ADSL, 4G/5G) en temps réel. Agrège les offres de 15+ opérateurs (Orange, SFR, Free, Bouygues…), test d'éligibilité par adresse, comparaison et filtrage des offres, alertes promotionnelles, actualités télécom et test de débit. Développé chez MapsIT – Paris 75011." data-it="Comparatore francese di offerte mobili e box internet (Fibra, ADSL, 4G/5G) in tempo reale. Aggrega le offerte di oltre 15 operatori (Orange, SFR, Free, Bouygues…), test di idoneità per indirizzo, confronto e filtraggio delle offerte, avvisi promozionali, notizie telecom e test di velocità. Sviluppato presso MapsIT – Parigi 75011.">
                         French real-time comparator for mobile plans &amp; internet boxes (Fibre, ADSL, 4G/5G). Aggregates offers from 15+ operators (Orange, SFR, Free, Bouygues…), address-based eligibility testing, offer filtering, promo alerts, telecom news and speed test. Built at MapsIT – Paris 75011.
                     </p>
                     <div class="tech-stack">
@@ -821,13 +808,13 @@
                         <a href="https://apps.apple.com/dz/app/venta-livreur/id6759285998" class="overlay-btn" title="App Store" target="_blank" rel="noopener noreferrer"><i class="fa fa-apple"></i></a>
                     </div>
                     <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
                         <span class="badge-platform badge-plat-mob">Mobile</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="App Livreur – Flutter">Delivery Driver App – Flutter</h3>
-                    <p data-fr="Application mobile pour livreurs avec géolocalisation, gestion de tournées et notifications en temps réel. Réalisé chez CYBERAX.">
+                    <h3 data-fr="App Livreur – Flutter" data-it="App Corriere – Flutter">Delivery Driver App – Flutter</h3>
+                    <p data-fr="Application mobile pour livreurs avec géolocalisation, gestion de tournées et notifications en temps réel. Réalisé chez CYBERAX." data-it="App mobile per corrieri con geolocalizzazione, gestione dei giri di consegna e notifiche in tempo reale. Realizzato presso CYBERAX.">
                         Mobile app for delivery drivers with geolocation, route management and real-time notifications. Built at CYBERAX.
                     </p>
                     <div class="tech-stack">
@@ -847,13 +834,13 @@
                         <a href="#" class="overlay-btn" title="View" data-gallery='["img/zoneadsl/1.png","img/zoneadsl/2.png","img/zoneadsl/3.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
-                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
                         <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Zone ADSL – Éligibilité Connexion">Zone ADSL – Connection Eligibility</h3>
-                    <p data-fr="Application web Angular permettant de tester l'éligibilité de connexion (mobile et box) pour des zones en France : vérification DNS, couverture réseau et disponibilité des offres. Back-end Spring Boot avec indexation Elasticsearch. Réalisé chez MapsIT.">
+                    <h3 data-fr="Zone ADSL – Éligibilité Connexion" data-it="Zone ADSL – Verifica Idoneità Connessione">Zone ADSL – Connection Eligibility</h3>
+                    <p data-fr="Application web Angular permettant de tester l'éligibilité de connexion (mobile et box) pour des zones en France : vérification DNS, couverture réseau et disponibilité des offres. Back-end Spring Boot avec indexation Elasticsearch. Réalisé chez MapsIT." data-it="Applicazione web Angular per verificare l'idoneità della connessione (mobile e box) per le zone in Francia: verifica DNS, copertura di rete e disponibilità delle offerte. Backend Spring Boot con indicizzazione Elasticsearch. Realizzato presso MapsIT.">
                         Angular web app for testing connection eligibility (mobile &amp; box) across zones in France: DNS checks, network coverage and offer availability. Spring Boot back-end with Elasticsearch indexing. Built at MapsIT.
                     </p>
                     <div class="tech-stack">
@@ -867,12 +854,98 @@
                 </div>
             </div>
 
-            <!-- PRO-8: Caissatn (Mobile POS) -->
+            <!-- PRO-8: Caissatn (Web POS) -->
+            <div class="project-card" data-type="professional" data-platform="web">
+                <div class="card-img">
+                    <img src="img/Caissatn/1.png" alt="Caissatn POS system" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/Caissatn/1.png", "img/Caissatn/2.png", "img/Caissatn/3.png", "img/Caissatn/4.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://caissa.tn/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Caissa.tn – POS</h3>
+                    <p data-fr="Solution SaaS multi-tenant de caisse et de gestion de point de vente pour commerces en Tunisie : ventes et sessions de caisse, achats et fournisseurs, gestion d'inventaire (produits, catégories, marques, mouvements de stock), statistiques de vente par période. Conformité à la facturation électronique tunisienne (NACEF) avec suivi du statut S-MDF et alertes d'expiration des certificats. Mode hors-ligne avec synchronisation, profils multi-rôles et authentification sécurisée via Keycloak. Réalisé chez MapsIT." data-it="Soluzione SaaS multi-tenant di cassa e gestione punto vendita per attività commerciali in Tunisia: vendite e sessioni di cassa, acquisti e fornitori, gestione dell'inventario (prodotti, categorie, marchi, movimenti di magazzino), statistiche di vendita per periodo. Conformità alla fatturazione elettronica tunisina (NACEF) con monitoraggio dello stato S-MDF e avvisi di scadenza dei certificati. Modalità offline con sincronizzazione, profili multi-ruolo e autenticazione sicura tramite Keycloak. Realizzato presso MapsIT.">
+                        Multi-tenant SaaS point-of-sale and shop management platform for businesses in Tunisia: sales and cash register sessions, purchases and suppliers, inventory management (products, categories, brands, stock movements), sales statistics by period. Compliant with Tunisian e-invoicing regulations (NACEF), tracking S-MDF status with certificate expiration alerts. Offline mode with sync, multi-role profiles and secure authentication via Keycloak. Built at MapsIT.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-angular">Angular 19</span>
+                        <span class="tech-tag t-default">TypeScript</span>
+                        <span class="tech-tag t-default">Angular CDK</span>
+                        <span class="tech-tag t-default">PWA</span>
+                        <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Keycloak</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO-9: Orca (RCA Mode E-commerce) -->
+            <div class="project-card" data-type="professional" data-platform="web">
+                <div class="card-img">
+                    <img src="img/orca/1.png" alt="Orca RCA Mode clothing e-commerce site" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/orca/1.png", "img/orca/2.png", "img/orca/3.png", "img/orca/4.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://orca-mode.com/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Orca – RCA Mode (E-commerce Vêtements)" data-it="Orca – RCA Mode (E-commerce Abbigliamento)">Orca – RCA Mode (Clothing E-commerce)</h3>
+                    <p data-fr="Boutique en ligne de prêt-à-porter (homme, femme, enfant) avec catalogue produits, variantes taille/couleur, panier, tunnel de commande et paiement à la livraison. Interface bilingue (FR/AR) avec mode sombre." data-it="Negozio online di abbigliamento (uomo, donna, bambino) con catalogo prodotti, varianti taglia/colore, carrello, processo di ordine e pagamento alla consegna. Interfaccia bilingue (FR/AR) con modalità scura.">
+                        Online clothing store (men, women, kids) with product catalog, size/color variants, cart, checkout flow and cash-on-delivery. Bilingual UI (FR/AR) with dark mode.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-angular">Angular</span>
+                        <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                        <span class="tech-tag t-default">REST API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO-10: Al-Amine (Food Price Tracking) -->
             <div class="project-card" data-type="professional" data-platform="mobile">
                 <div class="card-img">
-                    <img src="img/projects/caissatn/caissatn.png" alt="Caissatn POS system" loading="lazy">
+                    <img src="img/alamine/1.png" alt="Al-Amine plateforme de suivi des prix alimentaires en Tunisie" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/caissatn/caissatn.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/alamine/1.png", "img/alamine/2.png", "img/alamine/3.png", "img/alamine/4.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://al-amine.tn/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro" data-it="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-mob">Mobile</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Al-Amine – Suivi des prix alimentaires" data-it="Al-Amine – Monitoraggio dei prezzi alimentari">Al-Amine – Food Price Tracking</h3>
+                    <p data-fr="Plateforme full-stack de suivi quotidien des prix de produits alimentaires sur le marché tunisien, en 3 composants : API REST Spring Boot 3 sécurisée par JWT, back-office Angular multilingue (fr/en) pour la gestion des produits, catégories, fournisseurs et publicités, et application mobile Flutter grand public pour consulter les prix en temps réel. Saisie et historique des prix journaliers avec journal d'audit, bannières publicitaires configurables et statistiques de visites." data-it="Piattaforma full-stack per il monitoraggio quotidiano dei prezzi dei prodotti alimentari sul mercato tunisino, composta da 3 componenti: API REST Spring Boot 3 protetta da JWT, back-office Angular multilingue (fr/en) per la gestione di prodotti, categorie, fornitori e pubblicità, e app mobile Flutter per il grande pubblico per consultare i prezzi in tempo reale. Inserimento e cronologia dei prezzi giornalieri con registro di controllo, banner pubblicitari configurabili e statistiche di visite.">
+                        Full-stack platform for daily food price tracking on the Tunisian market, built as 3 components: JWT-secured Spring Boot 3 REST API, multilingual (fr/en) Angular back-office for managing products, categories, suppliers and ads, and a public Flutter mobile app for real-time price lookup. Daily price entry &amp; history with audit trail, configurable ad banners and visit statistics.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-flutter">Flutter</span>
+                        <span class="tech-tag t-angular">Angular 17</span>
+                        <span class="tech-tag t-spring">Spring Boot 3</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                        <span class="tech-tag t-default">JWT</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO-11: Salony Spécialiste -->
+            <div class="project-card" data-type="professional" data-platform="mobile">
+                <div class="card-img">
+                    <img src="img/projects/salony/specialiste.png" alt="Salony beauty specialist app" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/salony/specialiste.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
@@ -880,15 +953,95 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3>Caissatn – POS</h3>
-                    <p data-fr="Système de point de vente complet avec gestion d'inventaire et reporting avancé. Réalisé chez MapsIT.">
-                        Complete point-of-sale system with inventory management and advanced reporting. Built at MapsIT.
+                    <h3 data-fr="Salony – App Spécialiste" data-it="Salony – App Professionista">Salony – Specialist App</h3>
+                    <p data-fr="Mise en relation entre clients et professionnels de beauté avec réservation et paiement en ligne. Réalisé en freelance." data-it="Piattaforma di collegamento tra clienti e professionisti della bellezza con prenotazione e pagamento online. Realizzato come freelance.">
+                        Connecting clients with beauty professionals – booking and online payment platform. Built as a freelance project.
                     </p>
                     <div class="tech-stack">
                         <span class="tech-tag t-flutter">Flutter</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
                         <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-mongo">MongoDB</span>
+                        <span class="tech-tag t-default">Stripe</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO-12: Salony Customer -->
+            <div class="project-card" data-type="professional" data-platform="mobile">
+                <div class="card-img">
+                    <img src="img/projects/salony/customer.png" alt="Salony customer app" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/salony/customer.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-mob">Mobile</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Salony – App Client" data-it="Salony – App Cliente">Salony – Client App</h3>
+                    <p data-fr="Application client pour réserver des services de beauté avec géolocalisation et notation. Réalisé en freelance." data-it="App cliente per prenotare servizi di bellezza con geolocalizzazione e valutazioni. Realizzato come freelance.">
+                        Client app for booking beauty services with geolocation and rating system. Built as a freelance project.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-flutter">Flutter</span>
+                        <span class="tech-tag t-spring">Spring Boot</span>
+                        <span class="tech-tag t-default">Liquibase</span>
+                        <span class="tech-tag t-default">Google Maps</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO-13: Bibo -->
+            <div class="project-card" data-type="professional" data-platform="mobile">
+                <div class="card-img">
+                    <img src="img/projects/bibo/bibo.png" alt="BiBoo childcare ecosystem app" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/bibo/bibo.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://www.biboochildrensplanet.com/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-mob">Mobile</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="BiBoo – Écosystème Petite Enfance" data-it="BiBoo – Ecosistema Prima Infanzia">BiBoo – Childcare Ecosystem</h3>
+                    <p data-fr="Écosystème numérique de gestion de la petite enfance en Tunisie : présences, planning, facturation, suivi GPS du transport scolaire et messagerie sécurisée parents-éducateurs, avec applications mobiles dédiées (éducateurs, parents, chauffeurs, spécialistes). Contribution freelance sur des modules back-office (ERP), sur l'application mobile (Flutter, Firebase) et sur des interfaces Angular." data-it="Ecosistema digitale per la gestione della prima infanzia in Tunisia: presenze, pianificazione, fatturazione, tracciamento GPS del trasporto scolastico e messaggistica sicura tra genitori ed educatori, con app mobili dedicate (educatori, genitori, autisti, specialisti). Contributo da freelance su moduli back-office (ERP), sull'app mobile (Flutter, Firebase) e su interfacce Angular.">
+                        Digital ecosystem for early-childhood care management in Tunisia: attendance, scheduling, billing, GPS school-transport tracking and secure parent-educator messaging, with dedicated mobile apps (educators, parents, drivers, specialists). Freelance contribution on back-office (ERP) modules, the mobile app (Flutter, Firebase) and Angular interfaces.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-flutter">Flutter</span>
+                        <span class="tech-tag t-firebase">Firebase</span>
+                        <span class="tech-tag t-angular">Angular</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO-14: Tunitalia Express -->
+            <div class="project-card" data-type="professional" data-platform="web">
+                <div class="card-img">
+                    <img src="img/tunitalia/1.png" alt="Tunitalia Express freight logistics platform" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/tunitalia/1.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://tunitaliaexpress.tn/" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Tunitalia Express – Transport de Fret" data-it="Tunitalia Express – Trasporto Merci">Tunitalia Express – Freight Logistics</h3>
+                    <p data-fr="Plateforme logistique pour Tunitalia Express, spécialiste du transport de fret entre la Tunisie et l'Italie : entreposage, expédition maritime et transport routier pour particuliers et professionnels. Réseau de 9 agences, 6 liaisons directes et départs réguliers avec compte à rebours en temps réel des prochains départs/retours. Réalisé chez MapsIT." data-it="Piattaforma logistica per Tunitalia Express, specialista del trasporto merci tra Tunisia e Italia: stoccaggio, spedizione marittima e trasporto su strada per privati e aziende. Rete di 9 agenzie, 6 collegamenti diretti e partenze regolari con conto alla rovescia in tempo reale per le prossime partenze/ritorni. Realizzato presso MapsIT.">
+                        Logistics platform for Tunitalia Express, a freight specialist connecting Tunisia and Italy: warehousing, maritime shipping and road transport for individuals and businesses. Network of 9 agencies, 6 direct routes and regular departures with a real-time countdown to the next departure/return. Built at MapsIT.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-angular">Angular</span>
+                        <span class="tech-tag t-spring">Spring Boot</span>
                         <span class="tech-tag t-default">PostgreSQL</span>
+                        <span class="tech-tag t-default">REST API</span>
                     </div>
                 </div>
             </div>
@@ -942,10 +1095,10 @@
         <div class="section-header">
             <span class="section-badge badge-pfe">
                 <i class="fa fa-graduation-cap"></i>&nbsp;
-                <span data-fr="Encadrement Académique PFE">Academic Supervision PFE</span>
+                <span data-fr="Encadrement Académique PFE" data-it="Supervisione Accademica Tesi">Academic Supervision PFE</span>
             </span>
-            <h2 data-fr-html="Projets de Fin d'<span>Études</span>" data-en-html="End-of-Study <span>Projects</span>">End-of-Study <span>Projects</span></h2>
-            <p data-fr="Projets web et mobile supervisés avec des étudiants en fin de cycle (PFE) – conception, développement et soutenance">
+            <h2 data-fr-html="Projets de Fin d'<span>Études</span>" data-it-html="Progetti di Fine <span>Studi</span>" data-en-html="End-of-Study <span>Projects</span>">End-of-Study <span>Projects</span></h2>
+            <p data-fr="Projets web et mobile supervisés avec des étudiants en fin de cycle (PFE) – conception, développement et soutenance" data-it="Progetti web e mobile supervisionati con studenti di fine ciclo (tesi) – progettazione, sviluppo e discussione">
                 Web &amp; mobile projects supervised with end-of-study students (PFE) – design, development &amp; defense
             </p>
         </div>
@@ -965,8 +1118,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Plateforme E-Learning">E-Learning Platform</h3>
-                    <p data-fr="Système complet d'apprentissage en ligne avec vidéos, quiz interactifs et suivi de progression.">
+                    <h3 data-fr="Plateforme E-Learning" data-it="Piattaforma E-Learning">E-Learning Platform</h3>
+                    <p data-fr="Système complet d'apprentissage en ligne avec vidéos, quiz interactifs et suivi de progression." data-it="Sistema completo di apprendimento online con video corsi, quiz interattivi e monitoraggio dei progressi.">
                         Complete online learning system with video courses, interactive quizzes and progress tracking.
                     </p>
                     <div class="tech-stack">
@@ -991,8 +1144,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Cabinet Médical">Medical Clinic System</h3>
-                    <p data-fr="Système de gestion de cabinet médical : prise de rendez-vous, dossiers patients et facturation.">
+                    <h3 data-fr="Cabinet Médical" data-it="Studio Medico">Medical Clinic System</h3>
+                    <p data-fr="Système de gestion de cabinet médical : prise de rendez-vous, dossiers patients et facturation." data-it="Sistema di gestione per studi medici: prenotazione appuntamenti, cartelle pazienti e fatturazione.">
                         Medical clinic management system: appointments, patient records and billing.
                     </p>
                     <div class="tech-stack">
@@ -1018,7 +1171,7 @@
                 </div>
                 <div class="card-body">
                     <h3>ParaMarket</h3>
-                    <p data-fr="Marketplace local avec système de recommandations et gestion avancée des stocks.">
+                    <p data-fr="Marketplace local avec système de recommandations et gestion avancée des stocks." data-it="Marketplace locale con sistema di raccomandazioni e gestione avanzata delle scorte.">
                         Local marketplace with recommendation system and advanced inventory management.
                     </p>
                     <div class="tech-stack">
@@ -1030,80 +1183,29 @@
                 </div>
             </div>
 
-            <!-- PFE-MOB-1: Salony Spécialiste -->
-            <div class="project-card" data-type="supervised" data-platform="mobile">
+            <!-- PFE-WEB-4: SAV -->
+            <div class="project-card" data-type="supervised" data-platform="web">
                 <div class="card-img">
-                    <img src="img/projects/salony/specialiste.png" alt="Salony beauty specialist app" loading="lazy">
+                    <img src="img/projects/SAV/1.png" alt="After-sales service application" loading="lazy">
                     <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/salony/specialiste.png"]'><i class="fa fa-eye"></i></a>
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/SAV/1.png"]'><i class="fa fa-eye"></i></a>
                     </div>
                     <div class="card-badges">
                         <span class="badge-type badge-type-pfe">PFE</span>
-                        <span class="badge-platform badge-plat-mob">Mobile</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Salony – App Spécialiste">Salony – Specialist App</h3>
-                    <p data-fr="Mise en relation entre clients et professionnels de beauté avec réservation et paiement en ligne.">
-                        Connecting clients with beauty professionals – booking and online payment platform.
+                    <h3 data-fr="Application SAV" data-it="Applicazione Assistenza Post-Vendita">After-Sales Service App</h3>
+                    <p data-fr="Plateforme de gestion des réclamations et du service après-vente avec suivi en temps réel." data-it="Piattaforma di gestione dei reclami e del servizio post-vendita con monitoraggio in tempo reale.">
+                        Claims and after-sales management platform with real-time tracking.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-tag t-flutter">Flutter</span>
+                        <span class="tech-tag t-angular">Angular</span>
                         <span class="tech-tag t-spring">Spring Boot</span>
                         <span class="tech-tag t-default">Liquibase</span>
-                        <span class="tech-tag t-mongo">MongoDB</span>
-                        <span class="tech-tag t-default">Stripe</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PFE-MOB-2: Salony Customer -->
-            <div class="project-card" data-type="supervised" data-platform="mobile">
-                <div class="card-img">
-                    <img src="img/projects/salony/customer.png" alt="Salony customer app" loading="lazy">
-                    <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/salony/customer.png"]'><i class="fa fa-eye"></i></a>
-                    </div>
-                    <div class="card-badges">
-                        <span class="badge-type badge-type-pfe">PFE</span>
-                        <span class="badge-platform badge-plat-mob">Mobile</span>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h3 data-fr="Salony – App Client">Salony – Client App</h3>
-                    <p data-fr="Application client pour réserver des services de beauté avec géolocalisation et notation.">
-                        Client app for booking beauty services with geolocation and rating system.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag t-flutter">Flutter</span>
-                        <span class="tech-tag t-spring">Spring Boot</span>
-                        <span class="tech-tag t-default">Liquibase</span>
-                        <span class="tech-tag t-default">Google Maps</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PFE-MOB-3: Bibo -->
-            <div class="project-card" data-type="supervised" data-platform="mobile">
-                <div class="card-img">
-                    <img src="img/projects/bibo/bibo.png" alt="Bibo book reading app" loading="lazy">
-                    <div class="card-overlay">
-                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/bibo/bibo.png"]'><i class="fa fa-eye"></i></a>
-                    </div>
-                    <div class="card-badges">
-                        <span class="badge-type badge-type-pfe">PFE</span>
-                        <span class="badge-platform badge-plat-mob">Mobile</span>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h3 data-fr="Bibo – Lecture Numérique">Bibo – Digital Reading</h3>
-                    <p data-fr="Application de lecture et partage de livres numériques avec recommandations personnalisées.">
-                        Digital book reading and sharing app with personalised recommendations.
-                    </p>
-                    <div class="tech-stack">
-                        <span class="tech-tag t-flutter">Flutter</span>
-                        <span class="tech-tag t-firebase">Firebase</span>
-                        <span class="tech-tag t-default">SQLite</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                        <span class="tech-tag t-default">WebSocket</span>
                     </div>
                 </div>
             </div>
@@ -1122,7 +1224,7 @@
                 </div>
                 <div class="card-body">
                     <h3>FOOD-APP</h3>
-                    <p data-fr="Application de commande de nourriture avec livraison et paiement mobile intégré.">
+                    <p data-fr="Application de commande de nourriture avec livraison et paiement mobile intégré." data-it="App per ordinare cibo con consegna e pagamento mobile integrato.">
                         Food ordering app with delivery management and integrated mobile payment.
                     </p>
                     <div class="tech-stack">
@@ -1146,8 +1248,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Menu Restaurant QR Code">Restaurant QR Menu</h3>
-                    <p data-fr="Menus numériques avec génération de QR codes et commande directe depuis table.">
+                    <h3 data-fr="Menu Restaurant QR Code" data-it="Menu Ristorante con QR Code">Restaurant QR Menu</h3>
+                    <p data-fr="Menus numériques avec génération de QR codes et commande directe depuis table." data-it="Menu digitali con generazione di codici QR e ordini diretti dal tavolo.">
                         Digital restaurant menus with QR code generation and direct table ordering.
                     </p>
                     <div class="tech-stack">
@@ -1173,7 +1275,7 @@
                 </div>
                 <div class="card-body">
                     <h3>SkillMaster</h3>
-                    <p data-fr="Plateforme d'apprentissage collaboratif avec chat en temps réel et évaluation des compétences.">
+                    <p data-fr="Plateforme d'apprentissage collaboratif avec chat en temps réel et évaluation des compétences." data-it="Piattaforma di apprendimento collaborativo con chat in tempo reale e valutazione delle competenze.">
                         Collaborative learning platform with real-time chat and skills assessment.
                     </p>
                     <div class="tech-stack">
@@ -1199,7 +1301,7 @@
                 </div>
                 <div class="card-body">
                     <h3>Edulink</h3>
-                    <p data-fr="Réseau social éducatif pour étudiants avec partage de ressources et groupes d'étude.">
+                    <p data-fr="Réseau social éducatif pour étudiants avec partage de ressources et groupes d'étude." data-it="Social network educativo per studenti con condivisione di risorse e gruppi di studio.">
                         Educational social network for students with resource sharing and study groups.
                     </p>
                     <div class="tech-stack">
@@ -1225,7 +1327,7 @@
                 </div>
                 <div class="card-body">
                     <h3>TradiGo</h3>
-                    <p data-fr="Application de traduction avec reconnaissance vocale et sauvegarde de l'historique.">
+                    <p data-fr="Application de traduction avec reconnaissance vocale et sauvegarde de l'historique." data-it="App di traduzione con riconoscimento vocale e cronologia salvata.">
                         Translation app with voice recognition and history saving.
                     </p>
                     <div class="tech-stack">
@@ -1248,8 +1350,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Chariot Intelligent IoT">Smart Cart – IoT</h3>
-                    <p data-fr="Solution IoT pour chariots de supermarché avec scan automatique et paiement sans contact.">
+                    <h3 data-fr="Chariot Intelligent IoT" data-it="Carrello Intelligente IoT">Smart Cart – IoT</h3>
+                    <p data-fr="Solution IoT pour chariots de supermarché avec scan automatique et paiement sans contact." data-it="Soluzione IoT per carrelli da supermercato con scansione automatica e pagamento contactless.">
                         IoT solution for supermarket carts with automatic scanning and contactless payment.
                     </p>
                     <div class="tech-stack">
@@ -1273,8 +1375,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h3 data-fr="Gestion Commandes Restaurant">Restaurant Order Management</h3>
-                    <p data-fr="Système de gestion de commandes pour restaurants avec interface tablette et cuisine.">
+                    <h3 data-fr="Gestion Commandes Restaurant" data-it="Gestione Ordini Ristorante">Restaurant Order Management</h3>
+                    <p data-fr="Système de gestion de commandes pour restaurants avec interface tablette et cuisine." data-it="Sistema di gestione ordini per ristoranti con interfaccia tablet e cucina.">
                         Restaurant order management system with tablet and kitchen display interface.
                     </p>
                     <div class="tech-stack">
@@ -1282,6 +1384,217 @@
                         <span class="tech-tag t-spring">Spring Boot</span>
                         <span class="tech-tag t-default">Liquibase</span>
                         <span class="tech-tag t-default">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-5: C2A-Vente -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/c2avente/1.png" alt="C2A-Vente placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/c2avente/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>C2A-Vente</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-6: HotelPro -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/hotelpro/1.png" alt="HotelPro placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/hotelpro/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="HôtelPro – Gestion Hôtelière" data-it="HotelPro – Gestione Alberghiera">HotelPro – Hotel Management</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-7: Workly -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/workly/1.png" alt="Workly placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/workly/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Workly – Plateforme de Recherche d'Emploi" data-it="Workly – Piattaforma di Ricerca Lavoro">Workly – Job Search Platform</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-8: STEG Energy AI System -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/stegenergy/1.png" alt="STEG Energy AI System placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/stegenergy/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>STEG Energy AI System</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-9: Aziin Hotel -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/aziinhotel/1.png" alt="Aziin Hotel placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/aziinhotel/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Aziin Hotel</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-10: LogiTrack -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/logitrack/1.png" alt="LogiTrack placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/logitrack/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="LogiTrack – Optimisation de la Chaîne Logistique" data-it="LogiTrack – Ottimizzazione della Catena Logistica">LogiTrack – Supply Chain Optimization</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-11: Sebn PFE -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/sebnpfe/1.png" alt="Sebn PFE placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/sebnpfe/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Sebn PFE</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-12: SotuLoad3D -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/sotuload3d/1.png" alt="SotuLoad3D placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/sotuload3d/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>SotuLoad3D</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-MOB-11: Bike Rental App -->
+            <div class="project-card" data-type="supervised" data-platform="mobile">
+                <div class="card-img">
+                    <img src="img/bikerental/1.png" alt="Bike Rental App placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/bikerental/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-mob">Mobile</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Application de Location de Vélos – Mini-Projet" data-it="App di Noleggio Biciclette – Mini-Progetto">Bike Rental App – Mini Project</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-flutter">Flutter</span>
+                        <span class="tech-tag t-default">Dart</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PFE-WEB-13: E-learning Chiheb -->
+            <div class="project-card" data-type="supervised" data-platform="web">
+                <div class="card-img">
+                    <img src="img/elearningchiheb/1.png" alt="E-learning Chiheb placeholder" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/elearningchiheb/1.png"]'><i class="fa fa-eye"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pfe">PFE</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="E-Learning Chiheb" data-it="E-Learning Chiheb">E-Learning Chiheb</h3>
+                    <p data-fr="Description à compléter." data-it="Descrizione da completare.">Description to complete.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-default">Stack ?</span>
                     </div>
                 </div>
             </div>
