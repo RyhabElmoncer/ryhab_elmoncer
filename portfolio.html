@@ -399,6 +399,8 @@
         .t-mongo    { background: #47a248; }
         .t-docker   { background: #2496ed; }
         .t-default  { background: #8e44ad; }
+        .t-nextjs   { background: #000000; }
+        .t-supabase { background: #3ecf8e; }
 
         /* ===== HIDDEN CARD ===== */
         .project-card.hidden { display: none; }
@@ -1071,6 +1073,34 @@
                 </div>
             </div>
 
+            <!-- PRO-9: Gestion Cours Particuliers -->
+            <div class="project-card" data-type="professional" data-platform="web">
+                <div class="card-img">
+                    <img src="img/projects/project-1.jpg" alt="Tutoring management platform Cours Particuliers" loading="lazy">
+                    <div class="card-overlay">
+                        <a href="#" class="overlay-btn" title="View" data-gallery='["img/projects/project-1.jpg"]'><i class="fa fa-eye"></i></a>
+                        <a href="https://ryhab-etude.vercel.app" class="overlay-btn" title="Visit site" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
+                    </div>
+                    <div class="card-badges">
+                        <span class="badge-type badge-type-pro" data-fr="Pro">Pro</span>
+                        <span class="badge-platform badge-plat-web">Web</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 data-fr="Plateforme de Gestion – Cours Particuliers">Tutoring Management Platform</h3>
+                    <p data-fr="Application de gestion de cours particuliers (7ème, 8ème, 9ème année) avec espace Admin et espace Parent : demandes d'inscription, création automatique des comptes parents, gestion des élèves et séances, suivi des présences et des paiements, sécurisée par Row Level Security Supabase.">
+                        Tutoring management app for grades 7-9 with Admin and Parent portals: enrollment requests, automatic parent account creation, student &amp; session management, attendance and payment tracking, secured by Supabase Row Level Security.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag t-nextjs">Next.js 15</span>
+                        <span class="tech-tag t-default">TypeScript</span>
+                        <span class="tech-tag t-default">Tailwind CSS</span>
+                        <span class="tech-tag t-supabase">Supabase</span>
+                        <span class="tech-tag t-default">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
         </div><!-- /grid-professional -->
     </div>
 </section>
@@ -1724,9 +1754,9 @@
 
         document.querySelectorAll('.overlay-btn').forEach(function (btn) {
             btn.addEventListener('click', function (e) {
-                e.preventDefault();
                 var raw = btn.getAttribute('data-gallery');
                 if (!raw) return;
+                e.preventDefault();
                 try {
                     open(JSON.parse(raw), 0);
                 } catch (err) {
